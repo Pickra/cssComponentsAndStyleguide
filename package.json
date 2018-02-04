@@ -1,0 +1,29 @@
+{
+  "name": "csscomponents",
+  "version": "0.0.1",
+  "description": "A CSS library and styleguide using SASS, BEM AND Flexbox",
+  "main": "build/bundle.js",
+  "scripts": {
+    "webpack": "webpack",
+    "prebuild": "rm -rf ./build && rm -rf ./styleguide",
+    "build": "npm run webpack"
+  },
+  "author": "Ari Picker",
+  "license": "ISC",
+  "devDependencies": {
+    "extract-text-webpack-plugin": "3.0.2",
+    "kss": "3.0.0-beta.18",
+    "kss-webpack-plugin": "1.3.1",
+    "node-sass": "4.7.2",
+    "sass-loader": "6.0.6",
+    "svg-sprite-loader": "3.6.2",
+    "svgo-loader": "2.1.0",
+    "webpack": "3.10.0"
+  },
+  "dependencies": {
+    "css-loader": "0.28.9",
+    "node-normalize-scss": "3.0.0",
+    "style-loader": "0.20.1",
+    "svgo": "1.0.4"
+  }
+}
