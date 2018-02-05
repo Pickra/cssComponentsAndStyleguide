@@ -16,7 +16,10 @@ const styles = {
       fallback: 'style-loader',
         use: [
             'css-loader',
-            {loader: 'sass-loader', options: {outputStyle: "compressed"}}
+            {
+                loader: 'sass-loader',
+                options: { outputStyle: "compressed" }
+            }
         ]
     })
 };
@@ -25,7 +28,7 @@ var KssConfig = {
     source: "./src",
     css: ["../build/styles.css"],
     js: ["../build/bundle.js"]
-  };
+};
 
 module.exports = env => {
     return {
