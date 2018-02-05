@@ -1,0 +1,75 @@
+// Icons
+//
+// The styleguide comes with [evil-icons](http://evil-icons.io/). Add an icon with the code below.
+// 
+// `<svg class="icon"><use xlink:href="#nameOfIconGoesHere"></use></svg>`
+//
+// Add a size class for larger sizes; sm, md, lg, xl, xxl.
+//
+// `<svg class="icon icon--sizeGoesHere"><use xlink:href="#nameOfIconGoesHere"></use></svg>`
+//
+// All of the icons are listed below in all 6 sizes.
+//
+// Markup: all-icons.html
+//
+// Styleguide Icons
+
+// Icon Color Options
+//
+// To add some color to your icons, just add a color class.
+//
+// .icon--color-primary - The primary color.
+// .icon--color-success - Congrats, you're a success!
+// .icon--color-danger - Danger Will Robinson, DANGER!!!!
+// .icon--color-info - Dropping some pearls of wisdom.
+//
+// Markup:
+// <svg class="icon icon--xxl {{ modifier_class }}"><use xlink:href="#ei-image"></use></svg>
+//
+// Styleguide Icons.colors
+
+.icon {
+    height: 1.1em;
+    width: 1em;
+    fill: currentColor;
+    vertical-align: middle;
+    margin-bottom: 2rem / 10;
+
+    &--reverse { transform: scaleX(-1); }
+
+    &--color {
+        &-primary { color: $primary; }
+        &-success { color: $success; }
+        &-danger { color: $danger; }
+        &-info { color: $info; }
+    }
+
+    $sizes: sm, md, lg, xl, xxl;
+
+    @for $i from 1 through length($sizes) {
+        $size: if($i == 1, 1.33em, #{$i}em);
+        
+        &--#{nth($sizes, $i)} {
+            height: $size;
+            width: $size;
+        }
+    }
+
+    // Spinners
+    //
+    // Check the markup dropdown for the spinner names.
+    // But feel free to spin any of the icons just by adding the handy dandy `.icon--spin` class.
+    //
+    // Markup:
+    // <svg class="icon icon--xxl icon--spin"><use xlink:href="#ei-spinner"></use></svg>
+    // <svg class="icon icon--xxl icon--spin"><use xlink:href="#ei-spinner-2"></use></svg>
+    // <svg class="icon icon--xxl icon--spin"><use xlink:href="#ei-spinner-3"></use></svg>
+    //
+    // Styleguide Icons.spinners
+
+    &--spin { animation: spin 1.35s linear infinite; }
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
