@@ -1,6 +1,5 @@
 const path = require("path");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const KssWebpackPlugin = require('kss-webpack-plugin');
 
 const svgs = {
     test: /\.svg$/,
@@ -24,12 +23,6 @@ const styles = {
     })
 };
 
-var KssConfig = {
-    source: "./src",
-    css: ["../build/styles.css"],
-    js: ["../build/bundle.js"]
-};
-
 module.exports = env => {
     return {
         entry: "./src/entry.js",
@@ -41,8 +34,7 @@ module.exports = env => {
             rules: [svgs, styles]
         },
         plugins: [
-            new ExtractTextPlugin("styles.css"),
-            new KssWebpackPlugin(KssConfig)
+            new ExtractTextPlugin("styles.css")
         ]
     };
 };
