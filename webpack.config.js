@@ -9,12 +9,22 @@ const svgs = {
     ]
 };
 
+const browsers = [ "Edge >= 1", "ie >= 11", "last 2 versions" ];
+
 const styles = {
     test: /\.scss$/,
     use: ExtractTextPlugin.extract({
       fallback: 'style-loader',
         use: [
             'css-loader',
+            {
+                loader: "postcss-loader",
+                options: {
+                    plugins: () => [
+                        require("autoprefixer")({ browsers: browsers })
+                    ]
+                }
+            },
             {
                 loader: 'sass-loader',
                 options: { outputStyle: "compressed" }

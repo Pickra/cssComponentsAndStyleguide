@@ -4,25 +4,27 @@
   "description": "A CSS library and styleguide using SASS, BEM AND Flexbox",
   "main": "build/bundle.js",
   "scripts": {
-    "prebuild": "rm -rf ./build && rm -rf ./styleguide",
     "styleguide": "npm run build && open ./styleguide/index.html",
     "build": "npm run webpack && npm run build:kss",
     "build:kss": "npm run kss -- --source ./src --css ../build/styles.css --js ../build/bundle.js",
+    "prebuild": "rm -rf ./build && rm -rf ./styleguide",
     "kss": "kss",
     "webpack": "webpack"
   },
   "author": "Ari Picker",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "7.2.5",
+    "css-loader": "0.28.9",
     "extract-text-webpack-plugin": "3.0.2",
     "kss": "3.0.0-beta.18",
     "node-sass": "4.7.2",
+    "postcss-loader": "2.1.0",
     "sass-loader": "6.0.6",
+    "style-loader": "0.20.1",
     "svg-sprite-loader": "3.6.2",
     "svgo-loader": "2.1.0",
-    "webpack": "3.10.0",
-    "css-loader": "0.28.9",
-    "style-loader": "0.20.1"
+    "webpack": "3.10.0"
   },
   "dependencies": {
     "node-normalize-scss": "3.0.0",
