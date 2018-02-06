@@ -1,32 +1,31 @@
-// Icons
-//
-// The styleguide comes with [evil-icons](http://evil-icons.io/). Add an icon with the code below.
-// 
-// `<svg class="icon"><use xlink:href="#nameOfIconGoesHere"></use></svg>`
-//
-// Add a size class for larger sizes; sm, md, lg, xl, xxl.
-//
-// `<svg class="icon icon--sizeGoesHere"><use xlink:href="#nameOfIconGoesHere"></use></svg>`
-//
-// All of the icons are listed below in all 6 sizes.
-//
-// Markup: all-icons.html
-//
-// Styleguide Icons
+@import "icons-all";
 
-// Icon Color Options
+// Icon Options
 //
-// To add some color to your icons, just add a color class.
+// Add some color or reverse your icons.
 //
 // .icon--color-primary - The primary color.
 // .icon--color-success - Congrats, you're a success!
 // .icon--color-danger - Danger Will Robinson, DANGER!!!!
 // .icon--color-info - Dropping some pearls of wisdom.
+// .icon--reverse - When you need a different perspective.
 //
 // Markup:
 // <svg class="icon icon--xxl {{ modifier_class }}"><use xlink:href="#ei-image"></use></svg>
 //
 // Styleguide Icons.colors
+
+// Spinners
+//
+// Check the markup dropdown for the spinner names.
+// But feel free to spin any of the icons just by adding the handy dandy `.icon--spin` class.
+//
+// Markup:
+// <svg class="icon icon--xxl icon--spin"><use xlink:href="#ei-spinner"></use></svg>
+// <svg class="icon icon--xxl icon--spin"><use xlink:href="#ei-spinner-2"></use></svg>
+// <svg class="icon icon--xxl icon--spin"><use xlink:href="#ei-spinner-3"></use></svg>
+//
+// Styleguide Icons.spinners
 
 .icon {
     height: 1.1em;
@@ -54,18 +53,6 @@
             width: $size;
         }
     }
-
-    // Spinners
-    //
-    // Check the markup dropdown for the spinner names.
-    // But feel free to spin any of the icons just by adding the handy dandy `.icon--spin` class.
-    //
-    // Markup:
-    // <svg class="icon icon--xxl icon--spin"><use xlink:href="#ei-spinner"></use></svg>
-    // <svg class="icon icon--xxl icon--spin"><use xlink:href="#ei-spinner-2"></use></svg>
-    // <svg class="icon icon--xxl icon--spin"><use xlink:href="#ei-spinner-3"></use></svg>
-    //
-    // Styleguide Icons.spinners
 
     &--spin { animation: spin 1.35s linear infinite; }
 }
