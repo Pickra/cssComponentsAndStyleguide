@@ -35,16 +35,19 @@ const styles = {
 
 module.exports = env => {
     return {
-        entry: "./src/entry.js",
+        entry: {
+            "build": "./src/entry.js",
+            "styleguide": "./styleguide/styles.scss"
+        },
         output: {
             path: path.join(__dirname, "build"),
-            filename: "bundle.js"
+            filename: "[name].js"
         },
         module: {
             rules: [svgs, styles]
         },
         plugins: [
-            new ExtractTextPlugin("styles.css")
+            new ExtractTextPlugin("[name].css")
         ]
     };
 };

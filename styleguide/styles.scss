@@ -1,0 +1,29 @@
+////////// STYLEGUIDE ONLY /////////
+.styleguide-blue-bg {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 2rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    background: rgb(0, 131, 140);
+    border-radius: 2px;
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.styleguide-blue-bg--large { min-height: 4rem; }
+
+.styleguide-darken-bg {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 2rem;
+    line-height: 2rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}

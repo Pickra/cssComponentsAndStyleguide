@@ -1,0 +1,109 @@
+@import "grid-examples";
+
+$baseline-unit: 2rem;
+$baseline-increment: $baseline-unit / 4;
+
+$columns: 12;
+$gutter: 0.5rem;
+
+$breakpoints: (
+    xs: false,
+    sm: 48em,
+    md: 62em,
+    lg: 75em
+);
+
+@mixin grid-breakpoints($break, $size) {
+    @if $break == xs {
+        @content;
+    } @else {
+        @media only screen and (min-width: $size) { @content; }
+    }
+}
+
+//////// Grid ////////
+.grid { width: 100%; }
+
+//////// Rows ////////
+@mixin get-row-utils($breakpoint) {
+    &--#{$breakpoint}-top         { align-items: flex-start; }
+    &--#{$breakpoint}-middle      { align-items: center; }
+    &--#{$breakpoint}-bottom      { align-items: flex-end; }
+    &--#{$breakpoint}-center      { justify-content: center; }
+    &--#{$breakpoint}-around      { justify-content: space-around; }
+    &--#{$breakpoint}-between     { justify-content: space-between; }
+
+    &--#{$breakpoint}-left {
+        justify-content: flex-start;
+        text-align: start;
+    }
+
+    &--#{$breakpoint}-right {
+        justify-content: flex-end;
+        text-align: end;
+    }
+}
+
+.grid__row {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: -$gutter;
+    margin-left: -$gutter;
+
+    &--padded { padding: $baseline-increment 0; }
+    
+    @each $break, $size in $breakpoints {
+      @include grid-breakpoints($break, $size) {
+        @include get-row-utils($break);
+      }
+    }
+}
+
+//////// Columns ////////
+@mixin get-shared-col-and-offset-vals($breakpoint) {
+    $cols: unquote('.grid__col--#{$breakpoint}');
+
+    @for $i from 1 through $columns {
+        $col-size: unquote('.grid__col--#{$breakpoint}-#{$i}');
+        $offset: unquote('.grid__col--#{$breakpoint}-offset-#{$i}');
+
+        $col-size-and-offset: $col-size, $offset;
+        $cols: append($cols, $col-size-and-offset, comma);
+    }
+
+    #{$cols} {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        padding-right: $gutter;
+        padding-left: $gutter;
+    }
+}
+
+@mixin get-cols-and-offsets($breakpoint) {
+    .grid__col--#{$breakpoint} {
+        flex-grow: 1;
+        flex-basis: 0;
+        max-width: 100%;
+
+        @for $i from 1 through $columns {
+            &-#{$i} {
+                flex-basis: (100% / $columns) * $i;
+                max-width: (100% / $columns) * $i;
+            }
+
+            &-offset-#{$i} {
+                margin-left: (100% / $columns) * $i;
+            }
+        }
+    }
+}
+
+@each $break, $size in $breakpoints {
+    @include grid-breakpoints($break, $size) {
+        @include get-shared-col-and-offset-vals($break);
+        @include get-cols-and-offsets($break);
+    }
+}
