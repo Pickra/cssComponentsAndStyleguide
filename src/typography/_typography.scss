@@ -1,0 +1,121 @@
+// Headers
+//
+// Markup: typography-headers.html
+//
+// Styleguide Typography.01headers
+
+// Lists
+//
+// Markup: typography-lists.html
+//
+// Styleguide Typography.01lists
+
+@import '../../node_modules/modularscale-sass/stylesheets/modularscale';
+
+$root-pixel: 65%;
+
+$ms-base: 1.35rem;
+$ms-ratio: $minor-third;
+
+$baseline-ratio: $fifth;
+$baseline-unit: 2rem;
+$baseline-increment: $baseline-unit / 4;
+
+$font-family: Georgia, Times New Roman, serif;
+$heading-letter-spacing: 0.01em;
+$bold: 600;
+$border-radius: $baseline-increment / 2;
+$box-shadow: 0 0 2px 2px $shadow-color;
+
+$body-font-size: ms(0);
+
+$headers: (
+    h1: ms(5),
+    h2: ms(4),
+    h3: ms(3),
+    h4: ms(2),
+    h5: ms(1),
+    h6: ms(0)
+);
+
+@each $header, $size in $headers {
+    $index: index($headers, ($header $size));
+    $divisor: if($index > 3, map-get($headers, h2), $size);
+    $dividend: ();
+
+    @if $header == h1       { $dividend: $baseline-unit * 2.1; }
+    @else if $header == h3  { $dividend: $baseline-unit * 1.5; }
+    @else                   { $dividend: $baseline-unit * 1.6; }
+
+    #{$header} {
+        margin-top: 0;
+        margin-bottom: if($index < 4, ($baseline-unit - 0.1rem), ($baseline-increment * 2));
+        border-bottom: if($index > 3, none, (0.1rem ridge $border-color));
+        font-size: $size;
+        font-weight: if($index < 4, normal, $bold);
+        line-height: $dividend / $divisor;
+        letter-spacing: $heading-letter-spacing;
+    }
+}
+
+html { font-size: $root-pixel; }
+
+body {
+    font-family: $font-family;
+    font-size: $body-font-size;
+    line-height: $baseline-unit / $body-font-size;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: $baseline-unit;
+}
+
+ul,
+ol {
+    padding-left: 2em;
+    margin-top: 0;
+    margin-bottom: $baseline-unit;
+}
+
+$list-item-spacing: $baseline-ratio * 0.25 * 1em; // Hits the baseline rhythm every fourth list item.
+
+li {
+    list-style-type: none;
+    position: relative;
+    margin-bottom: $list-item-spacing;
+
+    ol,
+    ul {
+        margin-top: $list-item-spacing;
+        margin-bottom: 0;
+    }
+}
+
+li::before { position: absolute; }
+
+ul>li::before {
+    content: '\2022'; // Bullet
+    font-size: #{$baseline-ratio}em;
+    line-height: 1;
+    left: - 2em / $baseline-ratio;
+}
+
+ol {
+    counter-reset: li;
+
+    & > li::before {
+        content: counter(li);
+        counter-increment: li;
+        font-family: $font-family;
+        font-size: ms(1, 1em);
+        font-style: italic;
+        line-height: ms(1, 1);
+        left: - 2em / ms(1, 1);
+    }
+}
+
+b,
+strong { font-weight: $bold; }
+
+a { color: $primary-color; }

@@ -37,10 +37,10 @@
     &--reverse { transform: scaleX(-1); }
 
     &--color {
-        &-primary { color: $primary; }
-        &-success { color: $success; }
-        &-danger { color: $danger; }
-        &-info { color: $info; }
+        &-primary { color: $primary-color; }
+        &-success { color: $success-color; }
+        &-danger { color: $warning-color; }
+        &-info { color: $info-color; }
     }
 
     $sizes: sm, md, lg, xl, xxl;

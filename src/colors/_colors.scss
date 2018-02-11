@@ -1,28 +1,14 @@
-$primary: rgb(0, 125, 184);
-$success:  rgb(70, 162, 46);
-$danger: rgb(212, 0, 2);
-$info: rgb(255, 165, 0);
+$primary-color: #7462E0;
+$success-color: #28A228;
+$warning-color: #E73C4E;
+$info-color: #D47500;
+$transparent-color: #ffffff00;
+$shadow-color: #34515E;
+$border-color: #808080;
 
-$shadow: rgba(194, 194, 194, 0.3);
-$transparent: rgba(255, 255, 255, 0);
+$text-color-default: #05182A;
+$text-color-warning: #96281B;
+$text-color-success: #24A159;
+$text-color-info: #008B8B;
 
-$border: rgb(223, 223, 223);
-
-$background-default: rgb(255, 255, 255);
-$background-muted: rgb(247, 247, 247);
-$background-dark: rgb(43, 43, 43);
-$background-dark-hover: rgb(22, 22, 22);
-$background-translucent-dark: rgba(0, 0, 0, 0.8);
-$background-lighten: rgba(255, 255, 255, 0.2);
-$background-danger: lighten($danger, 35%);
-$background-success: rgb(228, 255, 221);
-$background-info: rgb(217, 248, 255);
-$background-warning: rgb(255, 253, 217);
-
-$text-default: rgb(50 , 58, 69);
-$text-light: rgb(255, 255, 255);
-$text-muted: rgb(119, 119, 119);
-$text-danger: rgb(127, 68, 68);
-$text-success: rgb(148, 161, 144);
-$text-info: rgb(128, 140, 143);
-$text-info: rgb(143, 142, 128);
+$background-color-default: #f5f5f5;
