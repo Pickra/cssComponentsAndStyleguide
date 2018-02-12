@@ -5,6 +5,8 @@
 // Styleguide Components.alerts
 
 .alert {
+    $icon-mt: -0.35rem;
+
     @mixin modifier($color) {
         $hover-color: darken($color, 47%);
     
@@ -37,6 +39,7 @@
         right: $baseline-unit;
         height: $baseline-unit;
         width: $baseline-unit;
+        margin-top: $icon-mt;
         border-radius: $baseline-increment;
         text-align: center;
         transition: background 0.5s, color 0.5s;
@@ -50,6 +53,6 @@
     &__icon {
         position: absolute;
         left: 2 * $baseline-increment;
-        margin-top: -0.1rem;
+        margin-top: $icon-mt;
     }
 }

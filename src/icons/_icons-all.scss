@@ -5,11 +5,11 @@
 // 
 // `<svg class="icon"><use xlink:href="#nameOfIconGoesHere"></use></svg>`
 //
-// Add a size class for larger sizes; sm, md, lg, xl, xxl.
+// Add a size class for larger sizes; md, lg, xl, xxl.
 //
 // `<svg class="icon icon--sizeGoesHere"><use xlink:href="#nameOfIconGoesHere"></use></svg>`
 //
-// All of the icons are listed below in all 6 sizes.
+// All of the icons are listed below in all 5 sizes; the default size is the smallest.
 // 
 // .ei-archive - ei-archive
 // .ei-arrow-down - ei-arrow-down
@@ -83,7 +83,6 @@
 // <a id="{{ modifier_class }}a" href="#{{ modifier_class }}a">{{ modifier_class }}</a>
 // <div class="{{ modifier_class }}a">
 //     <svg class="icon"><use xlink:href="#{{ modifier_class }}"></use></svg>
-//     <svg class="icon icon--sm"><use xlink:href="#{{ modifier_class }}"></use></svg>
 //     <svg class="icon icon--md"><use xlink:href="#{{ modifier_class }}"></use></svg>
 //     <svg class="icon icon--lg"><use xlink:href="#{{ modifier_class }}"></use></svg>
 //     <svg class="icon icon--xl"><use xlink:href="#{{ modifier_class }}"></use></svg>

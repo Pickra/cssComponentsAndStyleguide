@@ -42,12 +42,12 @@
         &-info { color: $info-color; }
     }
 
-    $sizes: sm, md, lg, xl, xxl;
+    $sizes: md, lg, xl, xxl;
 
-    @for $i from 1 through length($sizes) {
-        $size: if($i == 1, ($ms-base + .5rem), $i * $ms-base);
+    @for $i from 2 through 5 {
+        $size: $i * $ms-base;
         
-        &--#{nth($sizes, $i)} {
+        &--#{nth($sizes, ($i - 1))} {
             height: $size;
             width: $size;
         }
