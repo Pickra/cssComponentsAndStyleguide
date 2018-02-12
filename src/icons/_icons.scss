@@ -28,11 +28,10 @@
 // Styleguide Icons.spinners
 
 .icon {
-    height: 1.1em;
-    width: 1em;
+    height: $ms-base;
+    width: $ms-base;
     fill: currentColor;
     vertical-align: middle;
-    margin-bottom: 2rem / 10;
 
     &--reverse { transform: scaleX(-1); }
 
@@ -46,7 +45,7 @@
     $sizes: sm, md, lg, xl, xxl;
 
     @for $i from 1 through length($sizes) {
-        $size: if($i == 1, 1.33em, #{$i}em);
+        $size: if($i == 1, ($ms-base + .5rem), $i * $ms-base);
         
         &--#{nth($sizes, $i)} {
             height: $size;

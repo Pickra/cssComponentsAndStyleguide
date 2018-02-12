@@ -1,0 +1,55 @@
+// Alerts
+//
+// Markup: alerts.html
+//
+// Styleguide Components.alerts
+
+.alert {
+    @mixin modifier($color) {
+        $hover-color: darken($color, 47%);
+    
+        background-color: $color;
+        color: $hover-color;
+    
+        &__close:hover {
+            color: $color;
+            background-color: $hover-color;
+        }
+    }
+
+    display: block;
+    position: relative;
+    margin-bottom: $baseline-unit;
+    padding: $baseline-unit ($baseline-unit * 2);
+    font-size: $body-font-size;
+    color: $text-color-default;
+    background-color: $background-color-default;
+    line-height: $baseline-unit;
+    border-radius: $border-radius;
+
+    &--warning  { @include modifier($warning-color); }
+    &--success  { @include modifier($success-color); }
+    &--info     { @include modifier($info-color); }
+
+    &__close {
+        display: block;
+        position: absolute;
+        right: $baseline-unit;
+        height: $baseline-unit;
+        width: $baseline-unit;
+        border-radius: $baseline-increment;
+        text-align: center;
+        transition: background 0.5s, color 0.5s;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $text-color-default;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        left: 2 * $baseline-increment;
+        margin-top: -0.1rem;
+    }
+}
