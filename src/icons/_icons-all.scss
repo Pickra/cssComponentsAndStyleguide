@@ -71,9 +71,6 @@
 // .ei-search - ei-search
 // .ei-share-apple - ei-share-apple
 // .ei-share-google - ei-share-google
-// .ei-spinner-2 - ei-spinner-2
-// .ei-spinner-3 - ei-spinner-3
-// .ei-spinner - ei-spinner
 // .ei-star - ei-star
 // .ei-tag - ei-tag
 // .ei-trash - ei-trash
@@ -83,14 +80,14 @@
 // .ei-user - ei-user
 //
 // Markup:
-// <p id="{{ modifier_class }}1">
-//     <div><a href="#{{ modifier_class }}1">{{ modifier_class }}</a></div>
+// <a id="{{ modifier_class }}1" href="#{{ modifier_class }}1">{{ modifier_class }}</a>
+// <div>
 //     <svg class="icon"><use xlink:href="#{{ modifier_class }}"></use></svg>
 //     <svg class="icon icon--sm"><use xlink:href="#{{ modifier_class }}"></use></svg>
 //     <svg class="icon icon--md"><use xlink:href="#{{ modifier_class }}"></use></svg>
 //     <svg class="icon icon--lg"><use xlink:href="#{{ modifier_class }}"></use></svg>
 //     <svg class="icon icon--xl"><use xlink:href="#{{ modifier_class }}"></use></svg>
 //     <svg class="icon icon--xxl"><use xlink:href="#{{ modifier_class }}"></use></svg>
-// </p>
-//
+// </div>
+// 
 // Styleguide Icons
