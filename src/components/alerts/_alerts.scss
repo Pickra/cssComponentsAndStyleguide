@@ -27,7 +27,7 @@
     color: $text-color-default;
     background-color: $background-color-default;
     line-height: $baseline-unit;
-    border-radius: $border-radius;
+    border-radius: $baseline-increment * 5;
 
     &--warning  { @include modifier($warning-color); }
     &--success  { @include modifier($success-color); }
@@ -37,10 +37,8 @@
         display: block;
         position: absolute;
         right: $baseline-unit;
-        height: $baseline-unit;
-        width: $baseline-unit;
         margin-top: $icon-mt;
-        border-radius: $baseline-increment;
+        border-radius: $baseline-unit;
         text-align: center;
         transition: background 0.5s, color 0.5s;
 
