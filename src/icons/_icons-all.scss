@@ -80,8 +80,8 @@
 // .ei-user - ei-user
 //
 // Markup:
-// <a id="{{ modifier_class }}1" href="#{{ modifier_class }}1">{{ modifier_class }}</a>
-// <div>
+// <a id="{{ modifier_class }}a" href="#{{ modifier_class }}a">{{ modifier_class }}</a>
+// <div class="{{ modifier_class }}a">
 //     <svg class="icon"><use xlink:href="#{{ modifier_class }}"></use></svg>
 //     <svg class="icon icon--sm"><use xlink:href="#{{ modifier_class }}"></use></svg>
 //     <svg class="icon icon--md"><use xlink:href="#{{ modifier_class }}"></use></svg>

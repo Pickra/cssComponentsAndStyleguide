@@ -23,7 +23,7 @@ $baseline-increment: $baseline-unit / 4;
 
 $font-family: Georgia, Times New Roman, serif;
 $bold: 600;
-$border-radius: $baseline-increment / 2;
+$border-radius: $baseline-increment;
 $box-shadow: 0 0 2px 2px $shadow-color;
 
 $body-font-size: ms(0);
@@ -85,9 +85,9 @@ li {
 li::before { position: absolute; }
 
 ul > li::before {
-    content: '\2022'; // Bullet
+    content: '\2022';
     font-size: #{$baseline-ratio}em;
-    line-height: 1;
+    line-height: $baseline-unit;
     left: 2em / -$baseline-ratio;
 }
 
