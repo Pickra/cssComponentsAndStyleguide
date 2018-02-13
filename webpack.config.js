@@ -37,7 +37,8 @@ module.exports = env => {
     return {
         entry: {
             "build": "./src/entry.js",
-            "styleguide": "./styleguide/styles.scss"
+            "styleguide": "./styleguide/styles.scss",
+            "kss": "./styleguide/kss.scss"
         },
         output: {
             path: path.join(__dirname, "build"),
