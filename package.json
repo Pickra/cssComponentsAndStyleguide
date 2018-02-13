@@ -4,10 +4,10 @@
   "description": "A CSS library and styleguide using SASS, BEM AND Flexbox",
   "main": "build/bundle.js",
   "scripts": {
-    "styleguide": "npm run build && open ./styleguide/kss/index.html",
+    "styleguide": "npm run build && open ./styleguide/html/index.html",
     "build": "npm run webpack && npm run build:kss",
-    "build:kss": "npm run kss -- --source ./src --css ../../build/build.css --css ../../build/styleguide.css --js ../../build/build.js --destination styleguide/kss",
-    "prebuild": "rm -rf ./build && rm -rf ./styleguide/kss",
+    "build:kss": "npm run kss -- -c ./kss-config.json",
+    "prebuild": "rm -rf ./build && rm -rf ./styleguide/html",
     "kss": "kss",
     "webpack": "webpack",
     "watch": "npm run build:kss && npm run webpack --watch"

@@ -1,0 +1,16 @@
+{
+  "//": "The source and destination paths are relative to this file.",
+  "source": "./src",
+  "destination": "styleguide/html",
+  
+  "//": "The css and js paths are URLs relative to the style guide destination.",
+  "css": [
+    "../../build/build.css",
+    "../../build/kss.css",
+    "../../build/styleguide.css"
+  ],
+  "js": ["../../build/build.js"],
+
+  "builder": "styleguide",
+  "title": "CSS Components and Styleguide"
+}
