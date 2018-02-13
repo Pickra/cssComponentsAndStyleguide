@@ -1,5 +1,21 @@
 // Alerts
 //
+// An alert looks like...
+//
+// ```
+// <container>                      - has an alert and alert--$color class
+//      <icon>                      - has an alert__icon class
+//          <svg>                   - has an icon and icon--$size class 
+//              <use xlink:href>    - $icon-reference
+//      <close>                     - has an alert__close alert--$color__close class
+//          <svg>                   - has an icon and icon--$size class 
+//              <use xlink:href>    - $icon-reference
+//      <text>
+//```
+//
+// But all you need to do is copy the markup below, add some text and pick a color:
+// <strong>warning</strong>, <strong>success</strong>, <strong>info</strong>
+//
 // Markup: alerts.html
 //
 // Styleguide Components.alerts
