@@ -18,5 +18,8 @@
     }
 }
 
-// Hide empty examples
+// Hide empty default examples
 .a, #a { display: none; }
+
+// Remove bullet from kss mobile menu
+.kss-nav__menu-item::before { content: ''; }
