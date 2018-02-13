@@ -1,4 +1,4 @@
-// Basic Usage
+// Intro
 //
 // A grid is 3 HTML elements...
 // ```
@@ -30,18 +30,18 @@
 //
 // Styleguide Grid.01basicUsage
 
-// Simple Columns
+// Easy Columns
 //
 // Don't wana do fractions everytime you need some columns?
-// Simple column classes only have screen sizes; `grid__col--$screenSize`.
+// Easy column classes only have screen sizes; `grid__col--$screenSize`.
 // 
 // Throw in up to 12 and the grid will do the work for you.
 //
-// Markup: simple-columns.html
+// Markup: easy-columns.html
 //
-// Styleguide Grid.02simpleColumns
+// Styleguide Grid.02easyColumns
 
-// Column Offsets
+// Offsets
 //
 // An offset is another column class, it has a screen size and a width.
 // Instead of setting the column width it pushes the column, a number of column sizes,
@@ -49,13 +49,13 @@
 // 
 // A column class looks like: `grid__col--$screenSize-offset-$width`
 //
-// NOTE: can't be used with simple columns.
+// NOTE: can't be used with easy columns.
 //
 // Markup: offsets.html
 //
 // Styleguide Grid.03offsets
 
-// Nested Grids
+// Nested
 //
 // You can nest grids in grids, go crazy!
 //
@@ -63,8 +63,10 @@
 //
 // Styleguide Grid.04nestedGrids
 
-// Row Content Horizontal Alignment
+// Horizontal
 //
+// <h4>Row Content Horizontal Alignment</h4>
+// 
 // Sometimes columns need to lean to the left, right or live in the center of a row.
 // 
 // We've got you covered...
@@ -76,7 +78,9 @@
 //
 // Styleguide Grid.05rowHorizontalAligment
 
-// Row Content Vertical Alignment
+// Vertical
+// 
+// <h4>Row Content Vertical Alignment</h4>
 //
 // Sometimes columns need to live at the top, bottom or middle of a row.
 // 
@@ -89,13 +93,15 @@
 //
 // Styleguide Grid.06rowVerticalAligment
 
-// Row Content Space Distribution
+// Distribution
+//
+// <h4>Row Content Space Distribution</h4>
 //
 // Sometimes... Sometimes audience, columns just need a little space in their row.
 // - `grid__row--$screenSize-around`
 // - `grid__row--$screenSize-between`
 //
-// NOTE: can't be used with simple columns.
+// NOTE: can't be used with easy columns.
 //
 // Markup: row-space-distribution.html
 //
