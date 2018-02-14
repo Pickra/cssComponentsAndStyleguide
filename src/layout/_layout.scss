@@ -74,7 +74,7 @@
     display: grid;
     grid-area: nav;
     justify-content: center;
-    box-shadow: rgba(0, 0, 0, 0.7) -14px 0px 10px -13px inset;
+    box-shadow: rgba($primary-color, .5) -14px 0px 10px -13px inset;
     overflow: auto;
     padding: $baseline-unit / 2;
 
