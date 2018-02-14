@@ -279,7 +279,7 @@ $kss-vertical-rhythm      : $kss-font-size * 1.5;
   }
 
   .kss-markup {
-    margin-bottom: 0;
+    margin: 1rem 0 0;
     border: 1px solid #ccc;
 
     &[open] summary {
