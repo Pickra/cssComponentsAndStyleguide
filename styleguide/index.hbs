@@ -11,12 +11,12 @@
   {{{styles}}}
 </head>
   <body class="layout kss-style">
-{{!-- HEADER --}}
+<!-- HEADER -->
     <header class="layout__header">
       <section>{{options.title}}</section>
     </header>
 
-{{!-- NAV --}}
+<!-- NAV -->
     <nav class="layout__nav">
       <ul class="layout__nav-menu">
       <li class="layout__nav-item">
@@ -56,7 +56,8 @@
       {{/each}}
       </ul>
     </nav>
-{{!-- MAIN --}}
+
+<!-- MAIN -->
     <main class="layout__main">
       {{#if template.isHomepage}}
         {{#if homepage}}
@@ -136,25 +137,17 @@
       {{/if}}
     </main>
 
+<!-- FOOTER -->
     <footer class="layout__footer">
       <div class="layout__footer-left-item">Important footer stuff</div>
       <div class="layout__footer-right-item">Not as important footer stuff</div>
     </footer>
 
-    <!-- SCRIPTS -->
+<!-- SCRIPTS -->
     <script src="../kss.js"></script>
     <script src="../prettify.js"></script>
-    <script src="../kss-guides.js"></script>
-    {{!-- <script src="../kss-markup.js"></script> --}}
     <script>
       prettyPrint();
-      var kssGuides = new KssGuides({
-        bodyClass: 'kss-guides-mode'
-      });
-      var kssMarkup = new KssMarkup({
-        bodyClass: 'kss-markup-mode',
-        detailsClass: 'kss-markup'
-      });
     </script>
     {{{scripts}}}
   </body>
