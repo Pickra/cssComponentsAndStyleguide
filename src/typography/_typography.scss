@@ -21,9 +21,9 @@ $baseline-ratio: $fifth;
 $baseline-unit: 2rem;
 $baseline-increment: $baseline-unit / 4;
 
-$font-family: Georgia, Times New Roman, serif;
+$font-family: Arial, Helvetica, sans-serif;
 $bold: 600;
-$border-radius: $baseline-increment * 2;
+$border-radius: $baseline-increment + .2rem;
 $box-shadow: 0 0 2px 2px $shadow-color;
 
 $body-font-size: ms(0);
