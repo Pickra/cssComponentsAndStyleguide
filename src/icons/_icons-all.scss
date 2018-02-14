@@ -81,7 +81,7 @@
 //
 // Markup:
 // <a id="{{ modifier_class }}a" href="#{{ modifier_class }}a">{{ modifier_class }}</a>
-// <div class="{{ modifier_class }}a">
+// <div>
 //     <svg class="icon"><use xlink:href="#{{ modifier_class }}"></use></svg>
 //     <svg class="icon icon--md"><use xlink:href="#{{ modifier_class }}"></use></svg>
 //     <svg class="icon icon--lg"><use xlink:href="#{{ modifier_class }}"></use></svg>
