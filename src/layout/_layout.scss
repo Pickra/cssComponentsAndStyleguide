@@ -19,8 +19,7 @@
         grid-template-columns: 1fr;
         
         grid-template-rows:
-            50px
-            max-content
+            repeat(2, max-content)
             1fr
             50px;
         
@@ -31,7 +30,19 @@
             "footer";
 	}
 
-    &__header { grid-area: header; }
+    &__header {
+        display: grid;
+        grid-area: header;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        background-color: $primary-color;
+        color: $background-color-default;
+
+        @media screen and (max-width: 500px) {
+            padding: 1rem;
+        }
+    }
 
     &__nav {
         display: grid;
