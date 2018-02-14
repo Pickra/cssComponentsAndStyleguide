@@ -59,6 +59,9 @@
 
             @media screen and (max-width: 500px) {
                 display: inline-block;
+                margin-right: $baseline-unit / 2;
+
+                &:last-of-type { margin-right: 0; }
             }
         }
 
@@ -70,7 +73,8 @@
 
     &__main {
         grid-area: main;
-        overflow: auto;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     &__footer { grid-area: footer; }
