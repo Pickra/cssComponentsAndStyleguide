@@ -12,7 +12,7 @@
 </head>
   <body class="layout kss-style">
     <header class="layout__header">{{options.title}}</header>
-
+{{!-- NAV --}}
     <nav class="layout__nav">
       <ul class="layout__nav-menu">
       <li class="layout__nav-item">
@@ -52,8 +52,98 @@
       {{/each}}
       </ul>
     </nav>
+{{!-- MAIN --}}
+    <main class="layout__main">
+      {{#if template.isHomepage}}
+        {{#if homepage}}
+          <div id="kssref-0" class="kss-section--depth-0">
+            {{{homepage}}}
+          </div>
+        {{/if}}
+      {{else}}
+        {{#each sections}}
+          <section
+              id="kssref-{{referenceURI}}"
+              class="kss-section--depth-{{depth}}"
+          >
+            <div>
+              <h{{depth}} class="kss-title kss-title--level-{{depth}}">
+                <a class="kss-title__permalink" href="#kssref-{{referenceURI}}">
+                  {{header}}
+                </a>
+              </h{{depth}}>
+              {{#if description}}<div>{{{description}}}</div>{{/if}}
+            </div>
 
-    <main class="layout__main"></main>
+            {{#if example}}
+              <div class="kss-modifier__wrapper">
+                <div class="kss-modifier__heading">
+                  Example{{#if modifiers}}s{{/if}}
+                </div>
+
+                {{#if modifiers}}
+                  <div class="kss-modifier__default-name">
+                    Default styling
+                  </div>
+                {{/if}}
+
+                <div class="kss-modifier__example">
+                  {{{example}}}
+                  <div class="kss-modifier__example-footer"></div>
+                </div>
+
+                {{#each modifiers}}
+                  <div class="kss-modifier__name">
+                    {{name}}
+                  </div>
+                  <div class="kss-modifier__description">
+                    {{{description}}}
+                  </div>
+                  <div class="kss-modifier__example">
+                    {{{markup}}}
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                {{/each}}
+              </div>
+
+              {{#if markup}}
+                <details class="kss-markup">
+                  <summary>
+                    {{#if markupFile }}
+                      Markup: <code>{{ markupFile }}</code>
+                    {{else}}
+                      Markup
+                    {{/if}}
+                  </summary>
+                  <pre class="prettyprint linenums lang-html"><code data-language="html">{{markup}}</code></pre>
+                </details>
+              {{/if}}
+            {{/if}}
+
+
+
+          </section>
+        {{/each}}
+      {{/if}}
+    </main>
+
     <footer class="layout__footer">footer</footer>
+
+    <!-- SCRIPTS -->
+    <script src="../kss.js"></script>
+    <script src="../prettify.js"></script>
+    <script src="../kss-guides.js"></script>
+    <script src="../kss-markup.js"></script>
+    <script>
+      prettyPrint();
+      var kssGuides = new KssGuides({
+        bodyClass: 'kss-guides-mode'
+      });
+      var kssMarkup = new KssMarkup({
+        bodyClass: 'kss-markup-mode',
+        detailsClass: 'kss-markup'
+      });
+    </script>
+    {{{scripts}}}
   </body>
 </html>

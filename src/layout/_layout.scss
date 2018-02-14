@@ -68,6 +68,10 @@
         }
     }
 
-    &__main { grid-area: main; }
+    &__main {
+        grid-area: main;
+        overflow: auto;
+    }
+
     &__footer { grid-area: footer; }
 }
