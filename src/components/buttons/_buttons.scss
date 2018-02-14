@@ -1,0 +1,52 @@
+// Buttons
+//
+// Try out the elements hover state!
+//
+// .button--primary  - Primary element.
+// .button--warning  - Warning element.
+// .button--go       - Go forth and prosper element.
+// .button--lg       - Large element.
+//
+// Markup: buttons.html
+//
+// Styleguide Components.button
+
+.button {
+    display: inline-block;
+    padding: ($baseline-increment) ($baseline-increment * 3);
+    color: $text-color-default;
+    background-color: $muted-color;
+    font-size: $body-font-size;
+    font-weight: $bold;
+    border: 1px outset $muted-color;
+    border-radius: $baseline-increment * 3;
+    line-height: $baseline-unit;
+    vertical-align: middle;
+    text-decoration: none;
+    transition: 0.25s linear background-color;
+
+    &:hover { background-color: mix($muted-color, $text-color-default, 90%); }
+
+    &:disabled {
+        opacity: 0.65;
+        cursor: not-allowed;
+    }
+
+    &--lg {
+        padding: ($baseline-unit / 2) ($baseline-unit);
+        font-size: ms(1);
+    }
+
+    $color-modifiers: (primary: $primary-color, warning: $warning-color, go: $success-color);
+
+    @each $name, $color in $color-modifiers {
+        &--#{$name} {
+            background-color: $color;
+            color: $muted-color;
+            border-color: $color;
+    
+            &:hover { background-color: mix($color, $text-color-default, 90%); }
+            &:disabled { background-color: $color; }
+        }
+    }
+}

@@ -23,7 +23,7 @@ $baseline-increment: $baseline-unit / 4;
 
 $font-family: Georgia, Times New Roman, serif;
 $bold: 600;
-$border-radius: $baseline-increment;
+$border-radius: $baseline-increment * 2;
 $box-shadow: 0 0 2px 2px $shadow-color;
 
 $body-font-size: ms(0);
