@@ -581,3 +581,6 @@ $kss-vertical-rhythm      : $kss-font-size * 1.5;
     }
   }
 }
+
+// Unused element causing markup styling problems
+.L0 > .pln { display: none; }
