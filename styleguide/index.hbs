@@ -13,7 +13,7 @@
   <body class="layout kss-style">
 {{!-- HEADER --}}
     <header class="layout__header">
-      <div>{{options.title}}</div>
+      <section>{{options.title}}</section>
     </header>
 
 {{!-- NAV --}}
@@ -136,7 +136,10 @@
       {{/if}}
     </main>
 
-    <footer class="layout__footer">footer</footer>
+    <footer class="layout__footer">
+      <div class="layout__footer-left-item">Important footer stuff</div>
+      <div class="layout__footer-right-item">Not as important footer stuff</div>
+    </footer>
 
     <!-- SCRIPTS -->
     <script src="../kss.js"></script>
