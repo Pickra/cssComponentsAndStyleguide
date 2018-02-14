@@ -185,31 +185,31 @@ $kss-vertical-rhythm      : $kss-font-size * 1.5;
 
 .layout {
 
-  .kss-section {
-    // margin-bottom: ($kss-vertical-rhythm * 2);
+  // .kss-section {
+  //   // margin-bottom: ($kss-vertical-rhythm * 2);
 
-    // "fullscreen" styles copied from Mozilla's default stylesheet.
-    &.is-fullscreen {
-      position: fixed !important;
-      top: 0 !important;
-      left: 0 !important;
-      right: 0 !important;
-      bottom: 0 !important;
-      width: 100% !important;
-      height: 100% !important;
-      margin: 0 !important;
-      min-width: 0 !important;
-      max-width: none !important;
-      min-height: 0 !important;
-      max-height: none !important;
-      box-sizing: border-box !important;
-      object-fit: contain !important;
-      transform: none !important;
-      // Turn on scrolling if needed.
-      overflow: auto !important;
-      padding: 20px;
-    }
-  }
+  //   // "fullscreen" styles copied from Mozilla's default stylesheet.
+  //   &.is-fullscreen {
+  //     position: fixed !important;
+  //     top: 0 !important;
+  //     left: 0 !important;
+  //     right: 0 !important;
+  //     bottom: 0 !important;
+  //     width: 100% !important;
+  //     height: 100% !important;
+  //     margin: 0 !important;
+  //     min-width: 0 !important;
+  //     max-width: none !important;
+  //     min-height: 0 !important;
+  //     max-height: none !important;
+  //     box-sizing: border-box !important;
+  //     object-fit: contain !important;
+  //     transform: none !important;
+  //     // Turn on scrolling if needed.
+  //     overflow: auto !important;
+  //     padding: 20px;
+  //   }
+  // }
 
   .kss-title__ref {
     display: block;
@@ -359,42 +359,34 @@ $kss-vertical-rhythm      : $kss-font-size * 1.5;
   //   }
   // }
 
-  .kss-parameters {
-    display: table;
-    list-style-type: none;
-    margin-top: 0;
-    margin-left: 0;
-    padding-left: 0;
-  }
-  .kss-parameters__title {
-    font-weight: bold;
-  }
-  .kss-parameters__item {
-    display: table-row;
-  }
-  .kss-parameters__name {
-    display: table-cell;
-    padding-right: 20px;
-    white-space: nowrap;
-  }
-  .kss-parameters__description {
-    display: table-cell;
-  }
-  .kss-parameters__default-value code {
-    white-space: nowrap;
-  }
+  // .kss-parameters {
+  //   display: table;
+  //   list-style-type: none;
+  //   margin-top: 0;
+  //   margin-left: 0;
+  //   padding-left: 0;
+  // }
+  // .kss-parameters__title {
+  //   font-weight: bold;
+  // }
+  // .kss-parameters__item {
+  //   display: table-row;
+  // }
+  // .kss-parameters__name {
+  //   display: table-cell;
+  //   padding-right: 20px;
+  //   white-space: nowrap;
+  // }
+  // .kss-parameters__description {
+  //   display: table-cell;
+  // }
+  // .kss-parameters__default-value code {
+  //   white-space: nowrap;
+  // }
 
   .kss-modifier__wrapper {
     border: 1px solid #ccc;
-    padding: 0 10px 10px;
-  }
-  .is-fullscreen .kss-modifier__wrapper {
-    // Un-do padding on .kss-section.
-    margin-left: -20px;
-    margin-right: -20px;
-    // Remove all padding on the wrapper
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0 10px;
     border: none;
   }
   .kss-modifier__heading {
@@ -404,31 +396,17 @@ $kss-vertical-rhythm      : $kss-font-size * 1.5;
     background-color: #eee;
     font-weight: bold;
   }
-  .is-fullscreen .kss-modifier__heading {
-    margin: 0 20px 10px;
-    border: 1px solid #ccc;
-  }
   .kss-modifier__default-name {
     font-weight: bold;
     margin-bottom: ($kss-vertical-rhythm / 2);
-  }
-  .is-fullscreen .kss-modifier__default-name {
-    margin-left: 20px;
-    margin-right: 20px;
   }
   .kss-modifier__name {
     float: left;
     padding-right: 10px;
     font-weight: bold;
   }
-  .is-fullscreen .kss-modifier__name {
-    margin-left: 20px;
-  }
   .kss-modifier__description {
     margin-bottom: ($kss-vertical-rhythm / 2);
-  }
-  .is-fullscreen .kss-modifier__description {
-    margin-right: 20px;
   }
   .kss-modifier__example {
     clear: left;
@@ -509,7 +487,7 @@ $kss-vertical-rhythm      : $kss-font-size * 1.5;
   }
 
   .kss-markup {
-    margin: $kss-vertical-rhythm 0;
+    margin-bottom: 0;
     border: 1px solid #ccc;
 
     &[open] summary {
@@ -517,18 +495,19 @@ $kss-vertical-rhythm      : $kss-font-size * 1.5;
       margin-bottom: 3px;
     }
 
-    summary {
-      padding-left: 10px;
-    }
-
+    summary { padding-left: 10px; }
     pre {
       margin: 0;
+      font-size: 1em;
+      
+      li { margin-bottom: 0; }
     }
   }
 
   .kss-source {
-    font-size: 80%;
-  }
+    font-size: .8em;
+    margin: 1em 0;
+   }
 
   .kss-github {
     display:none;
@@ -585,14 +564,12 @@ $kss-vertical-rhythm      : $kss-font-size * 1.5;
     list-style-type: none;
 
     li {
-      min-height: $kss-vertical-rhythm;
       border-bottom: 1px solid #eee;
       padding: 0 10px;
       background: #fff;
 
-      &:first-child {
-        padding-top: 3px;
-      }
+      &:first-child { padding-top: 3px; }
+      &::before { content: none; }
     }
     /* Alternate shading for lines */
     li.L0,

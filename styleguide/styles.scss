@@ -17,19 +17,3 @@
         color: rgb(255, 255, 255);
     }
 }
-
-// Hide empty default examples
-.a, #a { display: none; }
-
-// Remove bullet from kss mobile menu
-.kss-nav__menu-item::before { content: ''; }
-
-// Adjust kss markup example
-.kss-markup.kss-style {
-    margin-bottom: 0;
-
-    pre {
-        font-size: .8em;
-        li { margin-bottom: 0; }
-    }
-}

@@ -115,13 +115,18 @@
                       Markup
                     {{/if}}
                   </summary>
-                  <pre class="prettyprint linenums lang-html"><code data-language="html">{{markup}}</code></pre>
+                  <pre class="prettyprint linenums lang-html">
+                    <code data-language="html">{{markup}}</code>
+                  </pre>
                 </details>
               {{/if}}
             {{/if}}
 
-
-
+            {{#if source.filename}}
+              <div class="kss-source kss-style">
+                Source: <code>{{source.filename}}</code>, line {{source.line}}
+              </div>
+            {{/if}}
           </section>
         {{/each}}
       {{/if}}
@@ -133,7 +138,7 @@
     <script src="../kss.js"></script>
     <script src="../prettify.js"></script>
     <script src="../kss-guides.js"></script>
-    <script src="../kss-markup.js"></script>
+    {{!-- <script src="../kss-markup.js"></script> --}}
     <script>
       prettyPrint();
       var kssGuides = new KssGuides({
