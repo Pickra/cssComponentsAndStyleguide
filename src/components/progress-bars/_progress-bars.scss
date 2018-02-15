@@ -1,0 +1,69 @@
+// Progress Bars
+//
+// Progress bars look like...
+//
+// ```
+//  <progress>
+//      <bar>
+// ```
+//
+// .progress__bar--warning - WATCH OUT, IT'S LOADING!!!!.
+// .progress__bar--success - YEAH, it's loading!
+// .progress__bar--info - Cool...it's loading.
+// .progress__bar--stripey - I was a zebra in my past life.
+// .progress__bar--wacky - I'm abstract.
+//
+// Markup: progress-bars.html
+//
+// Styleguide Components.progress
+
+.progress {
+    display: flex;
+    height: $baseline-increment * 3;
+    margin: $baseline-increment 0 $baseline-increment;
+    background-color: rgba($primary-color, .15);
+    border-radius: $border-radius;
+    box-shadow: inset 0 1px 2px $shadow-color;
+    overflow: hidden;
+    font-size: $body-font-size;
+
+    &__bar {
+        $stripe: rgba(0, 0, 0, 0.15);
+        $gradient: 45deg, $stripe 25%, transparent 25%, transparent 50%,
+            $stripe 50%, $stripe 75%, transparent 75%, transparent;
+
+        @mixin animated {
+            background-image: linear-gradient($gradient);
+            animation: stripes 3s linear infinite;
+        }
+
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        white-space: nowrap;
+        color: $background-color-default;
+        text-align: center;
+        background-color: $primary-color;
+        transition: width 0.6s ease;
+        box-shadow: inset 0 2px 6px rgba($background-color-default, .7);
+
+        &--warning { background-color: $warning-color; }
+        &--success { background-color: $success-color; }
+        &--info { background-color: $info-color; }
+        
+        &--stripey {
+            @include animated;
+            background-size: ($baseline-increment * 2) ($baseline-increment * 2);
+        }
+
+        &--wacky {
+            @include animated;
+            background-size: ($baseline-increment * 3) $baseline-increment;
+        }
+    }
+}
+
+@keyframes stripes { 
+    0%      { background-position: 0 0; }
+    100%    { background-position: 60px 0; }
+}
