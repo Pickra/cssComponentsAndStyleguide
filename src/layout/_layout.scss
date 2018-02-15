@@ -15,7 +15,7 @@
 		"footer 	footer";
 	
     @media screen and (max-width: 500px) {
-        padding: 0 $baseline-unit / 2;
+        padding: 0 $baseline-increment;
         grid-template-columns: 1fr;
         
         grid-template-rows:

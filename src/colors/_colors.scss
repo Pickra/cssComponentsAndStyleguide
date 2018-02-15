@@ -5,7 +5,7 @@ $info-color: #ff8d01;
 $muted-color: #dddada;
 
 $shadow-color: rgba(0, 0, 0, 0.4);
-$border-color: #808080;
+$border-color: lighten($primary-color, 25%);
 
 $text-color-default: #05182A;
 $text-color-warning: #96281B;
