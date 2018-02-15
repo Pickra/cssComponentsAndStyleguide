@@ -19,7 +19,7 @@
 
 .progress {
     display: flex;
-    height: $baseline-increment * 3;
+    height: $baseline-unit;
     margin: $baseline-increment 0 $baseline-increment;
     background-color: rgba($primary-color, .15);
     border-radius: $border-radius;
@@ -37,8 +37,13 @@
             animation: stripes 3s linear infinite;
         }
 
+        @mixin color-modifier($color) {
+            background-color: $color;
+            border-color: $color
+        }
+
         display: flex;
-        height: 100%;
+        height: $baseline-increment * 3;
         justify-content: center;
         white-space: nowrap;
         color: $background-color-default;
@@ -46,10 +51,12 @@
         background-color: $primary-color;
         transition: width 0.6s ease;
         box-shadow: inset 0 2px 6px rgba($background-color-default, .7);
+        border: .2rem solid $primary-color;
+        border-radius: $baseline-increment * 3;
 
-        &--warning { background-color: $warning-color; }
-        &--success { background-color: $success-color; }
-        &--info { background-color: $info-color; }
+        &--warning  { @include color-modifier($warning-color); }
+        &--success  { @include color-modifier($success-color); }
+        &--info     { @include color-modifier($info-color); }
         
         &--stripey {
             @include animated;
