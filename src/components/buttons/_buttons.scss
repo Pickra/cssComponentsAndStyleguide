@@ -18,23 +18,30 @@
     background-color: $muted-color;
     font-size: $body-font-size;
     font-weight: $bold;
-    border: 1px outset $muted-color;
+    border: $baseline-increment outset $muted-color;
     border-radius: $baseline-increment * 3;
     line-height: $baseline-unit;
     vertical-align: middle;
     text-decoration: none;
     transition: 0.25s linear background-color;
 
-    &:hover { background-color: mix($muted-color, $text-color-default, 90%); }
+    &:hover {
+        $hover-color: mix($muted-color, $text-color-default, 75%);
+
+        background-color: $hover-color;
+        border-color: $hover-color;
+    }
 
     &:disabled {
-        opacity: 0.65;
+        opacity: 0.55;
         cursor: not-allowed;
     }
 
     &--lg {
         padding: ($baseline-unit / 2) ($baseline-unit);
-        font-size: ms(1);
+        font-size: map-get($headers, h5);
+        border-radius: $baseline-unit;
+        border-width: $baseline-unit / 2;
     }
 
     $color-modifiers: (primary: $primary-color, warning: $warning-color, go: $success-color);
@@ -42,11 +49,17 @@
     @each $name, $color in $color-modifiers {
         &--#{$name} {
             background-color: $color;
-            color: $muted-color;
+            color: $background-color-default;
             border-color: $color;
     
-            &:hover { background-color: mix($color, $text-color-default, 90%); }
             &:disabled { background-color: $color; }
+
+            &:hover {
+                $hover-color: mix($color, $text-color-default, 75%);
+
+                background-color: $hover-color;
+                border-color: $hover-color;
+            }
         }
     }
 }
