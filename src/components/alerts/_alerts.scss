@@ -24,10 +24,11 @@
     $icon-mt: -0.35rem;
 
     @mixin modifier($color) {
-        $hover-color: darken($color, 47%);
+        $hover-color: mix($color, $text-color-default, 75%);
     
         background-color: $color;
-        color: $hover-color;
+        color: darken($color, 47%);
+        border-color: $hover-color;
     
         &__close:hover {
             color: $color;
@@ -43,7 +44,8 @@
     color: $text-color-default;
     background-color: $background-color-default;
     line-height: $baseline-unit;
-    border-radius: $baseline-increment * 5;
+    border: $baseline-increment outset $muted-color;
+    border-radius: $baseline-increment * 3;
 
     &--warning  { @include modifier($warning-color); }
     &--success  { @include modifier($success-color); }

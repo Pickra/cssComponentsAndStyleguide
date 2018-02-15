@@ -38,7 +38,7 @@
         text-align: center;
         transition: 0.25s ease;
         border-radius: $border-radius;
-        border: 1px solid $background-color-default;
+        border: $baseline-increment solid $background-color-default;
         
         &--active,
         &:hover {

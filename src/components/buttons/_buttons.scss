@@ -12,6 +12,15 @@
 // Styleguide Components.button
 
 .button {
+    @mixin hover($color) {
+        $hover-color: mix($color, $text-color-default, 75%);
+
+        &:hover {
+            background-color: $hover-color;
+            border-color: $hover-color;
+        }
+    }
+
     display: inline-block;
     padding: ($baseline-increment) ($baseline-increment * 3);
     color: $text-color-default;
@@ -25,12 +34,7 @@
     text-decoration: none;
     transition: 0.25s linear background-color;
 
-    &:hover {
-        $hover-color: mix($muted-color, $text-color-default, 75%);
-
-        background-color: $hover-color;
-        border-color: $hover-color;
-    }
+    @include hover($muted-color);
 
     &:disabled {
         opacity: 0.55;
@@ -52,14 +56,9 @@
             color: $background-color-default;
             border-color: $color;
     
+            @include hover($color);
+
             &:disabled { background-color: $color; }
-
-            &:hover {
-                $hover-color: mix($color, $text-color-default, 75%);
-
-                background-color: $hover-color;
-                border-color: $hover-color;
-            }
         }
     }
 }

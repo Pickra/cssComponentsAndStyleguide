@@ -38,6 +38,7 @@
         font-size: 2.5rem;
         background-color: $primary-color;
         color: $background-color-default;
+        border: $baseline-increment outset $primary-color;
 
         @media screen and (max-width: 500px) {
             padding: 1rem;
