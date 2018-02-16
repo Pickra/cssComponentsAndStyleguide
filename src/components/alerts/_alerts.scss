@@ -44,8 +44,7 @@
     color: $text-color-default;
     background-color: $background-color-default;
     line-height: $baseline-unit;
-    border-radius: $baseline-increment * 5;
-    border-radius: $baseline-increment * 3;
+    border-radius: $border-radius;
 
     &--warning  { @include modifier($warning-color); }
     &--success  { @include modifier($success-color); }

@@ -20,7 +20,6 @@
     &__item {
         margin: 0;
         display: inline-block;
-        padding: 0 .1rem;
         min-width: $baseline-unit;
         text-align: center;
         font-size: $body-font-size;
@@ -30,14 +29,14 @@
     
     &__link {
         display: inline-block;
-        padding: 0 $baseline-increment;
+        padding: 0 0.7rem;
         min-width: $baseline-unit;
         color: $primary-color;
         text-decoration: none;
+        border-radius: 0.7rem;
         box-sizing: border-box;
         text-align: center;
         transition: 0.25s ease;
-        border-radius: $border-radius;
         
         &--active,
         &:hover {
