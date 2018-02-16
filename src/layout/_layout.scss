@@ -87,25 +87,49 @@
     &-menu {
         padding: 0;
         margin: 0;
+
+        @media screen and (max-width: 500px) {
+            border-bottom: $border;
+        }
+    }
+
+    &-link {
+        color: $text-color-default;
+
+        &:hover { color: $primary-color; }
+        &--active { color: $success-color; }
     }
 
     &-item {
         list-style-type: none;
         font-size: $baseline-increment * 3;
         font-weight: $bold;
-
+    
         &::before { display: none; }
 
         @media screen and (max-width: 500px) {
             display: inline-block;
             margin-right: $baseline-unit / 2;
-
+    
             &:last-of-type { margin-right: 0; }
         }
     }
 
-    &-link {
-        color: $text-color-default;
-        &:hover { color: $primary-color; }
+    &-child-menu {
+        display: none;
+
+        @media screen and (min-width: 501px) {
+            display: block;
+    
+            li:first-child {
+                padding: ($baseline-unit / 2) 0 0;
+                border-top: $border;
+            }
+    
+            li:last-child {
+                padding: 0 0 ($baseline-unit / 2);
+                border-bottom: $border;
+            }
+        }
     }
 }

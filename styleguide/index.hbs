@@ -19,18 +19,18 @@
 <!-- NAV -->
     <nav class="layout__nav">
       <ul class="layout__nav-menu">
-      <li class="layout__nav-item">
-        <a class="layout__nav-link" href="./index.html">
-          <span class="kss-nav__name">
-            <span class="kss-nav__ref">0</span>
-            Overview
-          </span>
-        </a>
-      </li>
+        <li class="layout__nav-item">
+          <a class="layout__nav-link" href="./index.html">
+            <span class="kss-nav__name">
+              <span class="kss-nav__ref">0</span>
+              Overview
+            </span>
+          </a>
+        </li>
       {{#each menu}}
         <li class="layout__nav-item">
           <a
-            class="layout__nav-link {{#if isActive}} kss-nav-link--active{{/if}}"
+            class="layout__nav-link {{#if isActive}} layout__nav-link--active{{/if}}"
             href="section-{{referenceURI}}.html"
           >
             <span class="kss-nav__name">
@@ -40,7 +40,7 @@
           </a>
           {{#if isActive}}
             {{#if children}}
-              <ul class="kss-nav__menu-child layout__nav-menu">
+              <ul class="layout__nav-menu layout__nav-child-menu">
               {{#each children}}
                 <li class="layout__nav-item">
                   <a

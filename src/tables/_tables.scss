@@ -16,8 +16,8 @@
     }
 
     &__row {
-        border-top: 1px solid $border-color;
-        border-bottom: 1px solid $border-color;
+        border-top: $border;
+        border-bottom: $border;
 
         &--stripe:nth-child(even) { background-color: $mod-row-bg-color; }
         &--hoverable:hover { background-color: $mod-row-bg-color; }

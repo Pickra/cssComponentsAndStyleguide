@@ -113,28 +113,6 @@ $kss-vertical-rhythm      : $kss-font-size * 1.5;
 // ------------------------------------------------------------------------------
 
 .layout {
-  .kss-nav-link--active { color: #16A085; }
-
-  .kss-nav__menu-child {
-    display: none;
-
-    @media screen and (min-width: 501px) {
-      display: block;
-
-      li:first-child {
-        margin-top: 10px;
-        padding: 10px 0 0;
-        border-top: 1px solid #808080;
-      }
-
-      li:last-child {
-        margin-bottom: 10px;
-        padding: 0 0 10px;
-        border-bottom: 1px solid #808080;
-      }
-    }
-  }
-
   .kss-nav__ref { margin-right: .5rem; }
   .kss-nav__ref-child { font-weight: normal; }
 }
