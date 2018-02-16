@@ -5,12 +5,10 @@
   "main": "build/bundle.js",
   "scripts": {
     "styleguide": "npm run build && open ./styleguide/html/index.html",
-    "build": "npm run webpack && npm run build:kss",
+    "build": "webpack && npm run build:kss",
+    "build:kss": "kss -c ./kss-config.json",
     "test": "a11y src/**/*.html && a11y src/components/**/*.html",
-    "build:kss": "npm run kss -- -c ./kss-config.json",
-    "prebuild": "rm -rf ./build && rm -rf ./styleguide/html",
-    "kss": "kss",
-    "webpack": "webpack"
+    "prebuild": "rm -rf ./build && rm -rf ./styleguide/html"
   },
   "author": "Ari Picker",
   "license": "ISC",
@@ -24,6 +22,10 @@
     "postcss-loader": "2.1.0",
     "sass-loader": "6.0.6",
     "style-loader": "0.20.1",
+    "stylelint": "8.4.0",
+    "stylelint-config-recommended-scss": "3.0.0",
+    "stylelint-scss": "2.3.0",
+    "stylelint-webpack-plugin": "0.10.2",
     "svg-sprite-loader": "3.6.2",
     "svgo-loader": "2.1.0",
     "webpack": "3.10.0"

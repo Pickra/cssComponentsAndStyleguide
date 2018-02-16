@@ -1,5 +1,6 @@
 const path = require("path");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const StyleLintPlugin = require("stylelint-webpack-plugin");
 
 const svgs = {
     test: /\.svg$/,
@@ -48,7 +49,8 @@ module.exports = env => {
             rules: [svgs, styles]
         },
         plugins: [
-            new ExtractTextPlugin("[name].css")
+            new ExtractTextPlugin("[name].css"),
+            new StyleLintPlugin({ configFile: "stylelint.config.js" })
         ]
     };
 };

@@ -72,15 +72,6 @@ ol {
     margin: 0 0 $baseline-unit;
 }
 
-li {
-    list-style-type: none;
-    position: relative;
-    margin-bottom: $baseline-increment;
-
-    ol,
-    ul { margin: $baseline-increment 0 0; }
-}
-
 li::before { position: absolute; }
 
 ul > li::before {
@@ -102,6 +93,15 @@ ol {
         line-height: ms(1, 1);
         left: - 2em / ms(1, 1);
     }
+}
+
+li {
+    list-style-type: none;
+    position: relative;
+    margin-bottom: $baseline-increment;
+
+    ol,
+    ul { margin: $baseline-increment 0 0; }
 }
 
 b,
