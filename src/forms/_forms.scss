@@ -1,0 +1,167 @@
+$form-element-border: 1px solid $border-color;
+$form-element-full-width: 100%;
+
+@mixin common-form-element-props($has-padding: true, $has-color: false) {
+    $text-color: darken($primary-color, 20%);
+
+    box-sizing: border-box;
+    margin: 0 $baseline-unit 0 0;
+    padding: if($has-padding, ($baseline-unit / 2), initial);
+    border: $form-element-border;
+    border-radius: $baseline-increment;
+    // border-radius: $border-radius;
+    background-color: rgba($primary-color, 0.1);
+    color: if($has-color, $text-color, initial);
+
+    &::placeholder { color: $text-color; }
+}
+
+.form {
+    border: none;
+    padding: 0;
+    margin-bottom: $baseline-unit;
+}
+
+.fieldset {
+    padding: $baseline-increment 0;
+    border: none;
+    display: block;
+    margin-bottom: $baseline-unit;
+
+    &__legend {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 3 * $baseline-increment ;
+        border-bottom: $form-element-border;
+        padding-bottom: $baseline-unit/2;
+        font-size: map-get($headers, h3);
+        font-weight: normal;
+        line-height: $baseline-unit / map-get($headers, h3);
+    }
+}
+
+.label {
+    font-weight: $bold;
+    display: block;
+    padding: $baseline-increment 0;
+    margin-right: $baseline-unit;
+
+    &--inline { display: inline-block; }
+    &--light { font-weight: normal;  }
+}
+
+.input {
+    @include common-form-element-props;
+    width: $form-element-full-width;
+    display: inline-block;
+}
+
+.checkbox,
+.radio {
+    margin: 0 ($baseline-unit * 0.333) 0 0;
+    border: $form-element-border;
+    font-size: ms(2);
+    vertical-align: baseline;
+}
+
+.select {
+    @include common-form-element-props(false, true);
+
+    display: block;
+    height: $baseline-increment * 5;
+
+    &--full-width { width: $form-element-full-width; }
+
+    &--inline {
+        display: inline-block;
+        margin: 0 $baseline-unit 0 $baseline-unit * 0.333;
+    }
+}
+
+.textarea {
+    @include common-form-element-props($has-color: true);
+
+    &--full-width {
+        box-sizing: border-box;
+        width: $form-element-full-width;
+    }
+}
+
+// Forms
+//
+// Forms contain several elements.
+//
+// Styleguide Forms
+
+// Labels
+//
+// Use the <strong>label</strong> class to identify a form element.
+// Use the grid to aid in positioning the label in the layout.
+//
+// .label--inline - Keeps radio buttons and/or checkboxes, wrapped in a label, on the same line.
+// .label--light - Lightens the label text.
+//
+// Markup: forms-label.html
+//
+// Styleguide Forms.1label
+
+// Inputs
+//
+// Markup: forms-input.html
+//
+// Styleguide Forms.2input
+
+// Checkboxes
+//
+// Markup: forms-checkbox.html
+//
+// Styleguide Forms.3checkbox
+
+// Radio Buttons
+//
+// Markup: forms-radio.html
+//
+// Styleguide Forms.4radio
+
+// Selects
+//
+// .select--full-width - Gives the select the width of its container.
+// .select--inline - Allows the select to be on the same line as other elements.
+//
+// Markup: forms-select.html
+//
+// Styleguide Forms.5select
+
+// Textarea
+//
+// .textarea--full-width - Gives the textarea the width of its container.
+//
+// Markup: forms-textarea.html
+//
+// Styleguide Forms.6textarea
+
+// Fieldsets
+//
+// Markup: forms-fieldset.html
+//
+// Styleguide Forms.7fieldset
+
+// Simple
+//
+// Forms depend on the Grid. See the markup for details.
+//
+// Markup: forms-simple.html
+//
+// Styleguide Forms.8simple
+
+// Verbose
+//
+// Use <strong>fieldset</strong> and <strong>legend</strong> tags to wrap inputs with verbose forms;
+// forms with multiple inputs.
+// 
+// Markup: forms-verbose.html
+// 
+// Styleguide Forms.9verbose
+

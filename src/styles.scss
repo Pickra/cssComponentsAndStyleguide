@@ -1,4 +1,5 @@
 @import "../node_modules/node-normalize-scss/normalize";
+@import "animations/animations";
 @import "colors/colors";
 @import "media/media";
 @import "typography/typography";
@@ -7,4 +8,4 @@
 @import "grid/grid";
 @import "components/components";
 @import "tables/tables";
-@import "animations/animations";
+@import "forms/forms";
