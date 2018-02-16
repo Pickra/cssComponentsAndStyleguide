@@ -376,3 +376,23 @@ $kss-vertical-rhythm      : $kss-font-size * 1.5;
 
 // Unused element causing markup styling problems
 .L0 > .pln { display: none; }
+
+//////// EXAMPLE STYLES ////////
+.styleguide {
+  &__box {
+      &--lg { min-height: 4rem; }
+      &--dark { background: rgba(0, 0, 0, 0.2); }
+
+      position: relative;
+      box-sizing: border-box;
+      min-height: 2rem;
+      line-height: 2rem;
+      margin: 0.5rem 0;
+      background: #527AC2;
+      border-radius: 2px;
+      overflow: hidden;
+      text-align: center;
+      padding: 1rem 0.5rem;
+      color: rgb(255, 255, 255);
+  }
+}

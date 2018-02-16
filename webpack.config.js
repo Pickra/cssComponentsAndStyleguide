@@ -1,4 +1,5 @@
 const path = require("path");
+const autoprefixer = require("autoprefixer");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const StyleLintPlugin = require("stylelint-webpack-plugin");
 
@@ -22,7 +23,7 @@ const styles = {
                 loader: "postcss-loader",
                 options: {
                     plugins: () => [
-                        require("autoprefixer")({ browsers: browsers })
+                        autoprefixer({ browsers: browsers })
                     ]
                 }
             },
@@ -38,7 +39,6 @@ module.exports = env => {
     return {
         entry: {
             "build": "./src/entry.js",
-            "styleguide": "./styleguide/styles.scss",
             "kss": "./styleguide/kss.scss"
         },
         output: {

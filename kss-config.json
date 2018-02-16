@@ -6,8 +6,7 @@
   "//": "The css and js paths are URLs relative to the style guide destination.",
   "css": [
     "../../build/build.css",
-    "../../build/kss.css",
-    "../../build/styleguide.css"
+    "../../build/kss.css"
   ],
   "js": ["../../build/build.js"],
 
