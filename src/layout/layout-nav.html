@@ -1,0 +1,48 @@
+<p>
+    Add the <strong>layout__nav-link--active</strong> class to a 
+    <strong>layout__nav-link</strong> to indicate it is the active nav item.
+<p>
+<p>
+    Add the <strong>layout__nav-child-menu</strong> to a nested UL or OL
+    so the user can distinguish between top level nav items and
+    child menu nav items.
+</p>
+
+<div class="layout" style="height: 100%">
+    <nav class="layout__nav">
+        <ul class="layout__nav-menu">
+            <li class="layout__nav-item">
+                <a class="layout__nav-link" href="#">
+                    No Scratching
+                </a>
+            </li>
+            <li class="layout__nav-item">
+                <a class="layout__nav-link" href="#">
+                    No Shedding
+                </a>
+            </li>
+            <li class="layout__nav-item">
+                <a class="layout__nav-link layout__nav-link--active" href="#">
+                    Kitty Litter Is Mandantory
+                </a>
+                <ul class="layout__nav-menu layout__nav-child-menu">
+                    <li class="layout__nav-item">
+                        <a class="layout__nav-link" href="#">
+                            Yes I'm Serious
+                        </a>
+                    </li>
+                    <li class="layout__nav-item">
+                        <a class="layout__nav-link" href="#">
+                            There's Always Outside
+                        </a>
+                    </li>
+                </ul>
+                <li class="layout__nav-item">
+                    <a class="layout__nav-link" href="#">
+                        Lion 'O Don't Play That
+                    </a>
+                </li>
+            </li>
+        </ul>
+    </nav>
+</div>

@@ -3,7 +3,7 @@
     display: grid;
     background-color: $background-color-default;
 	grid-gap: $baseline-unit / 2;
-	grid-template-columns: 12.5em 1fr;
+	grid-template-columns: 16.5rem 1fr;
 	grid-template-rows:
 		50px
 		1fr
@@ -133,3 +133,65 @@
         }
     }
 }
+
+// Layout
+//
+// The layout uses CSS Grid, which has pretty good broswer support.
+// But you should definitely
+// [check yourself before you wreck yourself](https://caniuse.com/#search=css%20grid).
+//
+// The layout uses semantic HTML and looks like...
+// ```
+//  <body class="layout">
+//      <header class="layout__header"> - Header content here
+// 
+//      <nav class="layout__nav">
+//          <ul class="layout__nav-menu">
+//              <li class="layout__nav-item">
+//                  <a class="layout__nav-link" href="#">
+// 
+//      <main class="layout__main"> - Main content here
+// 
+//      <footer class="layout__footer">
+//          <div class="layout__footer-left-item">
+//          <div class="layout__footer-right-item">
+// ```
+//
+// This styleguide uses the layout styles and is responsive.
+// Go ahead, resize the window like nobody's watching...
+// 
+// <u>Please note the below examples, except `full` use a <strong>div</strong> tag
+// for the <strong>layout</strong> class because
+// there should only be 1 <strong>body</strong> tag on a page.</u>
+//
+// Styleguide Layout
+
+// Header
+//
+// Markup: layout-header.html
+//
+// Styleguide Layout.1header
+
+// Nav
+//
+// Markup: layout-nav.html
+//
+// Styleguide Layout.2nav
+
+// Main
+// 
+// Markup: layout-main.html
+// 
+// Styleguide Layout.3main
+
+// Footer
+// 
+// Markup: layout-footer.html
+// 
+// Styleguide Layout.4footer
+
+// Full
+// 
+// Markup: layout-full.html
+// 
+// Styleguide Layout.5full
