@@ -275,21 +275,65 @@ section[id^="kssref"] {
 .kss-source.kss-style code {color: #16A085; }
 
 //////// EXAMPLE STYLES ////////
+
+@import "../src/colors/colors";
+@import "../src/typography/typography";
+
+$primaries:(
+  primary: $primary-color,
+  success: $success-color,
+  warning: $warning-color,
+  info: $info-color,
+  muted: $muted-color
+);
+
+$ancillaries: (
+  border: $border-color,
+  text: $text-color,
+  background-color: $background-color
+);
+
 .styleguide {
   &__box {
-      &--lg { min-height: 4rem; }
-      &--dark { background: rgba(0, 0, 0, 0.2); }
+    position: relative;
+    box-sizing: border-box;
+    min-height: $baseline-unit;
+    line-height: $baseline-unit;
+    margin: $baseline-increment 0;
+    background: $primary-color;
+    border-radius: 2px;
+    text-align: center;
+    padding: ($baseline-increment * 2) $baseline-increment;
+    color: $background-color;
+    
+    &--lg { min-height: 4rem; }
+    &--dark { background: rgba(0, 0, 0, 0.2); }
+  }
+    
+  &__circle {
+    width: 18rem;
+    height: 18rem;
+    margin: 0 auto $baseline-unit;
+    color: $background-color;
+    text-align: center;
+    border-radius: 9rem;
+    
+    &--dark-text { color: $text-color; }
+    &-val { font-size: $baseline-unit; }
 
-      position: relative;
-      box-sizing: border-box;
-      min-height: 2rem;
-      line-height: 2rem;
-      margin: 0.5rem 0;
-      background: #527AC2;
-      border-radius: 2px;
-      overflow: hidden;
-      text-align: center;
-      padding: 1rem 0.5rem;
-      color: rgb(255, 255, 255);
+    &-name {
+      margin: 0;
+      padding: 5.5rem 0 ($baseline-unit / 2);
+      font-size: $baseline-increment * 5;
+    }
+
+  }
+  
+  @each $name, $color in $primaries {
+    &--#{$name} { background-color: $color; }
+  }
+  
+  @each $name, $color in $ancillaries {
+    &--#{$name} { color: $color; }
   }
 }

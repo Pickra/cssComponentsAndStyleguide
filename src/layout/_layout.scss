@@ -1,7 +1,7 @@
 .layout {
     height: 100vh;
     display: grid;
-    background-color: $background-color-default;
+    background-color: $background-color;
 	grid-gap: $baseline-unit / 2;
 	grid-template-columns: 16.5rem 1fr;
 	grid-template-rows:
@@ -37,7 +37,7 @@
         align-items: center;
         font-size: 2.5rem;
         background-color: $primary-color;
-        color: $background-color-default;
+        color: $background-color;
 
         @media screen and (max-width: 500px) {
             padding: 1rem;
@@ -94,7 +94,7 @@
     }
 
     &-link {
-        color: $text-color-default;
+        color: $text-color;
 
         &:hover { color: $primary-color; }
         &--active { color: $success-color; }

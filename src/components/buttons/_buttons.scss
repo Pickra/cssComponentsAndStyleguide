@@ -13,14 +13,14 @@
 
 .button {
     @mixin hover($color) {
-        $hover-color: mix($color, $text-color-default, 75%);
+        $hover-color: mix($color, $text-color, 75%);
 
         &:hover { background-color: $hover-color; }
     }
 
     display: inline-block;
     padding: ($baseline-increment) ($baseline-increment * 3);
-    color: $text-color-default;
+    color: $text-color;
     background-color: $muted-color;
     font-size: $body-font-size;
     font-weight: $bold;
@@ -47,7 +47,7 @@
     @each $name, $color in $color-modifiers {
         &--#{$name} {
             background-color: $color;
-            color: $background-color-default;
+            color: $background-color;
             border-color: $color;
     
             @include hover($color);

@@ -24,7 +24,7 @@
     $icon-mt: -0.35rem;
 
     @mixin modifier($color) {
-        $hover-color: mix($color, $text-color-default, 75%);
+        $hover-color: mix($color, $text-color, 75%);
     
         background-color: $color;
         color: darken($color, 47%);
@@ -41,8 +41,8 @@
     margin-bottom: $baseline-unit;
     padding: $baseline-unit ($baseline-unit * 2);
     font-size: $body-font-size;
-    color: $text-color-default;
-    background-color: $background-color-default;
+    color: $text-color;
+    background-color: $background-color;
     line-height: $baseline-unit;
     border-radius: $border-radius;
 
@@ -61,7 +61,7 @@
 
         &:hover {
             cursor: pointer;
-            background-color: $text-color-default;
+            background-color: $text-color;
         }
     }
 

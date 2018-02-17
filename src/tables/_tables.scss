@@ -4,13 +4,13 @@
 
     table-layout: fixed;
     width: 100%;
-    background-color: $background-color-default;
+    background-color: $background-color;
     margin-bottom: $baseline-unit;
     border-collapse: collapse;
     box-sizing: border-box;
 
     &__header {
-        color: $text-color-default;
+        color: $text-color;
         background-color: $header-bg-color;
         text-align: left;
     }
