@@ -8,13 +8,8 @@ $kss-colors-heading       : #111;
 $kss-colors-quotes        : #666;
 
 $kss-colors-link          : #0645ad;
-$kss-colors-link-visited  : #0645ad;
-$kss-colors-link-hover    : lighten($kss-colors-link, 20%);
-$kss-colors-link-active   : #faa700;
 
-$kss-font-body            : Helvetica, 'Helvetica Neue', Arial, sans-serif;
 $kss-font-code            : Menlo, 'Ubuntu Mono', 'Lucida Console', 'Courier New', Courier, monospace;
-
 $kss-font-size            : 16px;
 $kss-vertical-rhythm      : $kss-font-size * 1.5;
 
@@ -163,7 +158,7 @@ $kss-vertical-rhythm      : $kss-font-size * 1.5;
     margin: 0 -10px 10px -10px;
     padding: 10px;
     border-bottom: 1px solid #ccc;
-    background-color: #eee;
+    background-color: #dddada;
     font-weight: bold;
   }
   .kss-modifier__default-name {
@@ -189,71 +184,9 @@ $kss-vertical-rhythm      : $kss-font-size * 1.5;
       margin-bottom: 0;
     }
   }
-  &.kss-guides-mode .kss-modifier__example,
-  &.kss-guides-mode .kss-modifier__example-footer {
-    &:before,
-    &:after {
-      z-index: -1;
-      box-sizing: border-box;
-      content: '';
-      position: absolute;
-      width: 5px;
-      height: 5px;
-      border: 2px solid #000;
-    }
-  }
-  &.kss-guides-mode .kss-modifier__example {
-    border-color: #000;
 
-    &:before {
-      top: -5px;
-      left: -5px;
-      border-top: 0;
-      border-left: 0;
-    }
-    &:after {
-      top: -5px;
-      right: -5px;
-      border-top: 0;
-      border-right: 0;
-    }
-  }
-  &.kss-guides-mode.kss-fullscreen-mode .kss-modifier__example {
-    &:before {
-      left: auto;
-      right: 0;
-    }
-    &:after {
-      right: auto;
-      left: 0;
-    }
-  }
   .kss-modifier__example-footer {
     clear: both;
-  }
-  &.kss-guides-mode .kss-modifier__example-footer {
-    &:before {
-      bottom: -5px;
-      left: -5px;
-      border-bottom: 0;
-      border-left: 0;
-    }
-    &:after {
-      bottom: -5px;
-      right: -5px;
-      border-right: 0;
-      border-bottom: 0;
-    }
-  }
-  &.kss-guides-mode.kss-fullscreen-mode .kss-modifier__example-footer {
-    &:before {
-      left: auto;
-      right: 0;
-    }
-    &:after {
-      right: auto;
-      left: 0;
-    }
   }
 
   .kss-markup {
@@ -271,26 +204,6 @@ $kss-vertical-rhythm      : $kss-font-size * 1.5;
       font-size: 1em;
       
       li { margin-bottom: 0; }
-    }
-  }
-
-  .kss-source {
-    font-size: .8em;
-    margin: 1em 0;
-   }
-
-  .kss-github {
-    display:none;
-
-    @media screen and (min-width: 501px) {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-
-    img {
-      border: 0;
     }
   }
 
@@ -354,6 +267,12 @@ $kss-vertical-rhythm      : $kss-font-size * 1.5;
 
 // Unused element causing markup styling problems
 .L0 > .pln { display: none; }
+
+section[id^="kssref"] {
+  margin-bottom: 2.5rem;
+}
+
+.kss-source.kss-style code {color: #16A085; }
 
 //////// EXAMPLE STYLES ////////
 .styleguide {
