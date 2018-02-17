@@ -150,9 +150,9 @@ $kss-vertical-rhythm      : $kss-font-size * 1.5;
   }
 
   .kss-modifier__wrapper {
-    border: 1px solid #ccc;
     padding: 0;
     border: none;
+    margin-bottom: 2rem;
   }
   .kss-modifier__heading {
     margin: 0 -10px 10px -10px;
