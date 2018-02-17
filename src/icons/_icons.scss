@@ -55,7 +55,3 @@
 
     &--spin { animation: spin 1.35s linear infinite; }
 }
-
-@keyframes spin {
-    to { transform: rotate(360deg); }
-}
