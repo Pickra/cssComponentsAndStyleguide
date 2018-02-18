@@ -326,7 +326,6 @@ $ancillaries: (
       padding: 5.5rem 0 ($baseline-unit / 2);
       font-size: $baseline-increment * 5;
     }
-
   }
   
   @each $name, $color in $primaries {
