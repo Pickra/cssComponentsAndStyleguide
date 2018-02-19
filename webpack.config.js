@@ -13,29 +13,38 @@ const svgs = {
 
 const browsers = [ "Edge >= 1", "ie >= 11", "last 2 versions" ];
 
-const styles = {
-    test: /\.scss$/,
-    use: ExtractTextPlugin.extract({
-      fallback: 'style-loader',
-        use: [
-            'css-loader',
-            {
-                loader: "postcss-loader",
-                options: {
-                    plugins: () => [
-                        autoprefixer({ browsers: browsers })
-                    ]
+const styles = isDev => {
+    return {
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+        fallback: 'style-loader',
+            use: [
+                {
+                    loader: 'css-loader',
+                    options: { sourceMap: isDev }
+                },
+                {
+                    loader: "postcss-loader",
+                    options: {
+                        sourceMap: isDev,
+                        plugins: () => [
+                            autoprefixer({ browsers: browsers })
+                        ]
+                    }
+                },
+                {
+                    loader: 'sass-loader',
+                    options: {
+                        outputStyle: isDev ? "expanded" : "compressed",
+                        sourceMap: isDev
+                    }
                 }
-            },
-            {
-                loader: 'sass-loader',
-                options: { outputStyle: "compressed" }
-            }
-        ]
-    })
+            ]
+        })
+    }
 };
 
-module.exports = env => {
+module.exports = (env = {dev: false}) => {
     return {
         entry: {
             "build": "./src/entry.js",
@@ -46,7 +55,7 @@ module.exports = env => {
             filename: "[name].js"
         },
         module: {
-            rules: [svgs, styles]
+            rules: [svgs, styles(env.dev)]
         },
         plugins: [
             new ExtractTextPlugin("[name].css"),

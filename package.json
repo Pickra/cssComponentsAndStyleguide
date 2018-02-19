@@ -3,9 +3,13 @@
   "version": "0.0.1",
   "description": "A CSS library and styleguide using SASS, BEM AND Flexbox",
   "main": "build/bundle.js",
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "scripts": {
-    "styleguide": "npm run build && open ./styleguide/html/index.html",
-    "build": "webpack && npm run build:kss",
+    "styleguide": "npm run dev && open ./styleguide/html/index.html",
+    "build": "npm run build:kss && webpack -p",
+    "dev": "npm run prebuild && npm run build:kss && webpack --env.dev --watch",
     "build:kss": "kss -c ./kss-config.json",
     "test": "a11y src/**/*.html && a11y src/components/**/*.html",
     "prebuild": "rm -rf ./build && rm -rf ./styleguide/html"
