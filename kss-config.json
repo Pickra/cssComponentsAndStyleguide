@@ -5,11 +5,11 @@
   
   "//": "The css and js paths are URLs relative to the style guide destination.",
   "css": [
-    "../../build/build.css",
-    "../../build/kss.css"
+    "../../dist/css-components.css",
+    "../../styleguide/kss-styles.css"
   ],
-  "js": ["../../build/build.js"],
+  "js": ["../../dist/css-components.js"],
 
-  "builder": "styleguide",
+  "builder": "styleguide-builder",
   "title": "CSS Components and Styleguide"
 }

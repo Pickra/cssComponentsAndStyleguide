@@ -1,18 +1,23 @@
 {
-  "name": "css-components-and-styleguide",
+  "name": "@pickra/css-components",
   "version": "0.0.1",
   "description": "A CSS library and styleguide using SASS, BEM AND Flexbox",
-  "main": "build/bundle.js",
+  "files": [
+    "dist/",
+    "styleguide/",
+    "src/colors/_colors.scss"
+  ],
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=6.0.0",
+    "npm": ">=3.8.6"
   },
   "scripts": {
-    "styleguide": "npm run dev && open ./styleguide/html/index.html",
+    "styleguide": "npm run build && open ./styleguide/html/index.html",
     "build": "npm run build:kss && webpack -p",
     "dev": "npm run prebuild && npm run build:kss && webpack --env.dev --watch",
     "build:kss": "kss -c ./kss-config.json",
     "test": "a11y src/**/*.html && a11y src/components/**/*.html",
-    "prebuild": "rm -rf ./build && rm -rf ./styleguide/html"
+    "prebuild": "rm -rf ./dist && rm -rf ./styleguide/html"
   },
   "author": "Ari Picker",
   "license": "ISC",

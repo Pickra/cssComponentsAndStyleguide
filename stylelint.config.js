@@ -2,6 +2,6 @@
 
 module.exports = {
     extends: "stylelint-config-recommended-scss",
-    ignoreFiles: "./styleguide/kss.scss",
+    ignoreFiles: "./styleguide-builder/kss.scss",
     rules: {}
 }

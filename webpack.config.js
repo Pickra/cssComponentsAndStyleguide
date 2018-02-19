@@ -47,11 +47,11 @@ const styles = isDev => {
 module.exports = (env = {dev: false}) => {
     return {
         entry: {
-            "build": "./src/entry.js",
-            "kss": "./styleguide/kss.scss"
+            "css-components": "./src/entry.js",
+            "../styleguide/kss-styles": "./styleguide-builder/kss.scss"
         },
         output: {
-            path: path.join(__dirname, "build"),
+            path: path.join(__dirname, "dist"),
             filename: "[name].js"
         },
         module: {

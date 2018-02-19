@@ -1,4 +1,5 @@
 node_modules
-build/
+dist/
 styleguide/html/
+styleguide/kss-styles.*
 npm-debug.log
