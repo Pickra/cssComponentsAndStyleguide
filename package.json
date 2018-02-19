@@ -16,7 +16,7 @@
     "build": "npm run build:kss && webpack -p",
     "dev": "npm run prebuild && npm run build:kss && webpack --env.dev --watch",
     "build:kss": "kss -c ./kss-config.json",
-    "test": "a11y src/**/*.html && a11y src/components/**/*.html",
+    "test": "a11y styleguide/html/*.html",
     "prebuild": "rm -rf ./dist && rm -rf ./styleguide/html"
   },
   "author": "Ari Picker",
