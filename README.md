@@ -46,10 +46,13 @@ node_modules/@pickra/css-components/styleguide/html/index.html
 ```
 ...and open it in the browser; no server needed.
 
+## Credit
+- svg icons from [evil icons](http://evil-icons.io/)
+- The styleguide is built with [kss-node](https://github.com/kss-node/kss-node)
+
 ## Features
 - [WCAG 2.O](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) accessible colors
 - Accessibility testing via [a11y](https://github.com/addyosmani/a11y)
-- svg icons from [evil icons](http://evil-icons.io/)
 
 ## Development
 - Prod build and open the styleguide in the browser: `npm run setup`
