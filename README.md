@@ -2,6 +2,8 @@
 
 > A CSS library and styleguide using SASS, BEM AND Flexbox
 
+Preview the [styleguide](https://pickra.github.io/cssComponentsAndStyleguide/index.html)
+
 ## Install
 
 ```console
