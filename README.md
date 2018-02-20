@@ -47,9 +47,10 @@ node_modules/@pickra/css-components/styleguide/html/index.html
 ## Features
 - [WCAG 2.O](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) accessible colors
 - Accessibility testing via [a11y](https://github.com/addyosmani/a11y)
+- svg icons from [evile icons](http://evil-icons.io/)
 
 ## Development
 - Prod build and open the styleguide in the browser: `npm run setup`
 - Prod build: `npm run build`
-- Development mode, watch on save: `npm run dev`
+- Development mode, watches `./src` changes on save: `npm run dev`
 - Run a11y tests: `npm run test`
