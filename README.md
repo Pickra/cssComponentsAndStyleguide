@@ -49,9 +49,6 @@ node_modules/@pickra/css-components/styleguide/html/index.html
 ## Credit
 - svg icons from [evil icons](http://evil-icons.io/)
 - The styleguide is built with [kss-node](https://github.com/kss-node/kss-node)
-
-## Features
-- [WCAG 2.O](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) accessible colors
 - Accessibility testing via [a11y](https://github.com/addyosmani/a11y)
 
 ## Development
