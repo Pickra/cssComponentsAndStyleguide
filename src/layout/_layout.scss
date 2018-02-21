@@ -3,7 +3,7 @@
     display: grid;
     background-color: $background-color;
 	grid-gap: $baseline-unit / 2;
-	grid-template-columns: 16.5rem 1fr;
+	grid-template-columns: 14rem 1fr;
 	grid-template-rows:
 		50px
 		1fr
@@ -48,7 +48,7 @@
         grid-area: main;
         overflow-y: scroll;
         overflow-x: hidden;
-        padding: 0 $baseline-increment;
+        padding: 0 ($baseline-unit / 2) 0 0;
     }
 
     &__footer {
@@ -78,7 +78,7 @@
     justify-content: center;
     box-shadow: rgba($primary-color, .5) -14px 0px 10px -13px inset;
     overflow: auto;
-    padding: $baseline-unit / 2;
+    padding-top: $baseline-unit / 2;
 
     @media screen and (max-width: 500px) {
         box-shadow: none;
