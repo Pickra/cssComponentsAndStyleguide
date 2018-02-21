@@ -20,6 +20,7 @@
 
     display: inline-block;
     padding: ($baseline-increment) ($baseline-increment * 3);
+    margin-bottom: $baseline-increment;
     color: $text-color;
     background-color: $muted-color;
     font-size: $body-font-size;
