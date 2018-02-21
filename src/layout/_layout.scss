@@ -48,7 +48,7 @@
         grid-area: main;
         overflow-y: scroll;
         overflow-x: hidden;
-        padding: 0 ($baseline-unit / 2) 0 0;
+        padding: 0 ($baseline-unit / 2) 0 0.1rem;
     }
 
     &__footer {
