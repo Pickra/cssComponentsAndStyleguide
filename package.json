@@ -2,6 +2,10 @@
   "name": "@pickra/css-components",
   "version": "0.1.1",
   "description": "A CSS library and styleguide using SASS, BEM AND Flexbox",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pickra/cssComponentsAndStyleguide.git"
+  },
   "files": [
     "dist/",
     "styleguide/",
