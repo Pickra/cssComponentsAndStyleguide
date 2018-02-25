@@ -10,11 +10,6 @@ Preview the [styleguide](https://pickra.github.io/cssComponentsAndStyleguide/ind
 npm install @pickra/css-components --save-dev
 ```
 
-## Requirements
-
-- node 6.0.0 or higher
-- npm 3.8.6 or higher
-
 ## Usage
 
 Import the css.
@@ -52,6 +47,8 @@ node_modules/@pickra/css-components/styleguide/html/index.html
 - Accessibility testing via [a11y](https://github.com/addyosmani/a11y)
 
 ## Development
+**Requirements:** `node` 6.0.0 or higher, `npm` 3.8.6 or higher
+
 - Prod build and open the styleguide in the browser: `npm run setup`
 - Prod build: `npm run build`
 - Development mode, watches `./src` changes on save: `npm run dev`
