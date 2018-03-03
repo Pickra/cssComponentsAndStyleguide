@@ -17,9 +17,10 @@
   },
   "scripts": {
     "styleguide": "npm run build && open ./styleguide/html/index.html",
-    "build": "npm run build:kss && webpack -p",
-    "dev": "npm run prebuild && npm run build:kss && webpack --env.dev --watch",
-    "build:kss": "kss -c ./kss-config.json",
+    "build": "webpack -p && npm run kss:build",
+    "dev": "npm run prebuild && concurrently \"webpack --env.dev --watch\" \"npm run kss:watch \"",
+    "kss:watch": "onchange \"src/**/*.{scss,html}\" \"styleguide-builder/kss.scss/\" -- npm run kss:build",
+    "kss:build": "kss -c ./kss-config.json",
     "test": "a11y styleguide/html/*.html",
     "prebuild": "rm -rf ./dist && rm -rf ./styleguide/html"
   },
@@ -28,10 +29,12 @@
   "devDependencies": {
     "a11y": "0.5.0",
     "autoprefixer": "7.2.5",
+    "concurrently": "3.5.1",
     "css-loader": "0.28.9",
     "extract-text-webpack-plugin": "3.0.2",
     "kss": "3.0.0-beta.18",
     "node-sass": "4.7.2",
+    "onchange": "3.3.0",
     "postcss-loader": "2.1.0",
     "sass-loader": "6.0.6",
     "style-loader": "0.20.1",
