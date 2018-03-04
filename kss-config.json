@@ -1,15 +1,15 @@
 {
-  "//": "The source and destination paths are relative to this file.",
-  "source": "./src",
-  "destination": "styleguide/html",
+  "title": "CSS Components and Styleguide",
   
-  "//": "The css and js paths are URLs relative to the style guide destination.",
+  "//": "source, destination + builder paths are relative to this file.",
+  "source": "./src",
+  "destination": "./styleguide/html",
+  "builder": "./styleguide-builder",
+  
+  "//": "css and js paths are relative to the style guide destination.",
   "css": [
     "../../dist/css-components.css",
     "../../styleguide/kss-styles.css"
   ],
-  "js": ["../../dist/css-components.js"],
-
-  "builder": "styleguide-builder",
-  "title": "CSS Components and Styleguide"
+  "js": ["../../dist/css-components.js"]
 }
