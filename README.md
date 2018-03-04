@@ -49,7 +49,7 @@ node_modules/@pickra/css-components/styleguide/html/index.html
 ## Development
 **Requirements:** `node` 6.0.0 or higher, `npm` 3.8.6 or higher
 
-- Prod build and open the styleguide in the browser: `npm run setup`
-- Prod build: `npm run build`
-- Development mode, watches `./src` changes on save: `npm run dev`
-- Run a11y tests: `npm run test`
+- `npm run styleguide`: Prod build and open the styleguide in the browser
+- `npm run build`: Prod build
+- `npm run dev`: Development mode, watch/rebuild on save
+- `npm run test`: Run a11y tests
