@@ -20,6 +20,7 @@
     "build": "webpack -p && npm run kss:build",
     "dev": "npm run prebuild && concurrently \"webpack --env.dev --watch\" \"npm run kss:watch \"",
     "test": "concurrently \"python -m SimpleHTTPServer\" \"nightwatch\"",
+    "changelog": "auto-changelog -l 100",
     "kss:watch": "onchange \"src/**/*.{scss,html}\" \"styleguide-builder/kss.scss/\" -- npm run kss:build",
     "kss:build": "kss -c ./kss-config.json",
     "prebuild": "rm -rf ./dist && rm -rf ./styleguide/html"
@@ -27,6 +28,7 @@
   "author": "Ari Picker",
   "license": "ISC",
   "devDependencies": {
+    "auto-changelog": "1.4.6",
     "autoprefixer": "7.2.5",
     "axe-core": "3.0.1",
     "chromedriver": "2.37.0",
