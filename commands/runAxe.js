@@ -24,19 +24,25 @@ module.exports.command = function runAxe(selector = 'html', options = {}) {
     }
 
     if (!!violations.length) {
-        console.log(chalk.bold.red('💥 💩 🔥  FIX THE FOLLOWING 💥 💩 🔥 \n'));
+        console.log(chalk.bold.keyword('crimson')('💩 🔥 💥  FIX THE FOLLOWING 💩 🔥 💥 \n'));
 
         violations.forEach(violation => {
             const { help, helpUrl, id, nodes } = violation;
-    
-            console.log(chalk.bold.white.bgRed(` ${help}\n Reference: ${helpUrl}\n`));
+            const fail = chalk.underline.bold.red(`${help}!`.toUpperCase());
+            const helpLabel = chalk.keyword('crimson')(`\nGet help with ${id}: `);
+            const link = chalk.keyword('aquamarine')(helpUrl + '\n');
+
+            console.log(fail + helpLabel + link);
     
             nodes.forEach(node => {
                 const { target } = node;
-                this.assert.fail(chalk.bgRed.white.bold(`Type: ${id}, Element: ${target}`));
+                const elLabel = chalk.keyword('crimson').bold('Element: ');
+                const el = chalk.keyword('fuchsia').bold(target);
+
+                this.assert.fail( elLabel + el );
             });
 
-            console.log(`💥 💩 🔥 💥 💩 🔥 💥 💩 🔥 💥 💩 🔥\n`);
+            console.log(`💩 🔥 💥 💩 🔥 💥 💩 🔥 💥 💩 🔥 💥\n`);
         });
     }
 
