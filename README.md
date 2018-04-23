@@ -44,8 +44,7 @@ node_modules/@pickra/css-components/styleguide/html/index.html
 ## Credit
 - svg icons from [evil icons](http://evil-icons.io/)
 - The styleguide is built with [kss-node](https://github.com/kss-node/kss-node)
-- Accessibility testing via [axe-core](https://github.com/dequelabs/axe-core) and
-[nightwatch](https://github.com/nightwatchjs/nightwatch)
+- Accessibility testing via [axe-core](https://github.com/dequelabs/axe-core)
 
 ## Development
 **Requirements:** `node` 6.0.0 or higher, `npm` 3.8.6 or higher

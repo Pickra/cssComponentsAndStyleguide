@@ -11,4 +11,4 @@ The rest of the styles will still work without it.
 ## Credit
 - svg icons from [evil icons](http://evil-icons.io/)
 - The styleguide is built with [kss-node](https://github.com/kss-node/kss-node)
-- Accessibility testing via [a11y](https://github.com/addyosmani/a11y)
+- Accessibility testing via [axe-core](https://github.com/dequelabs/axe-core)
