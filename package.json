@@ -18,7 +18,7 @@
   "scripts": {
     "prebuild": "rm -rf ./dist && rm -rf ./styleguide/html",
     "build": "webpack -p && npm run kss:build",
-    "dev": "concurrently \"webpack --env.dev --watch\" \"npm run kss:watch \" \"npm run styleguide:open\"",
+    "dev": "concurrently \"webpack --env.dev\" \"npm run kss:watch \" \"npm run styleguide:open\"",
     "styleguide": "npm run build && npm run styleguide:open",
     "styleguide:open": "open ./styleguide/html/index.html",
     "test": "concurrently \"node server/server.js\" \"onchange tests/*.js -i -- nightwatch\"",

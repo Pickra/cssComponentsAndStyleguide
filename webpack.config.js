@@ -11,7 +11,7 @@ const svgs = {
     ]
 };
 
-const browsers = [ "Edge >= 1", "ie >= 11", "last 2 versions" ];
+const browsers = [ "Edge >= 1", "ie >= 11", ">=0.25%" ];
 
 const styles = isDev => {
     return {
@@ -61,6 +61,7 @@ module.exports = (env = {dev: false}) => {
         plugins: [
             new MiniCssExtractPlugin({ filename: "[name].css" }),
             new StyleLintPlugin({ configFile: "stylelint.config.js" })
-        ]
+        ],
+        watch: isDev
     };
 };
