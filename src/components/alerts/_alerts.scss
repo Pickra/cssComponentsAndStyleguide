@@ -27,7 +27,7 @@
         $hover-color: mix($color, $text-color, 75%);
     
         background-color: $color;
-        color: darken($color, 47%);
+        color: darken($color, 48%);
         border-color: $hover-color;
     
         &__close:hover {
