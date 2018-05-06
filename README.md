@@ -44,6 +44,7 @@ node_modules/@pickra/css-components/styleguide/html/index.html
 ## Credit
 - svg icons from [evil icons](http://evil-icons.io/)
 - The styleguide is built with [kss-node](https://github.com/kss-node/kss-node)
+- [nightwatch](https://github.com/nightwatchjs/nightwatch) is the testing framework
 - Accessibility testing via [axe-core](https://github.com/dequelabs/axe-core)
 
 ## Development
@@ -52,4 +53,17 @@ node_modules/@pickra/css-components/styleguide/html/index.html
 - `npm run styleguide`: Prod build and open the styleguide in the browser
 - `npm run build`: Prod build
 - `npm run dev`: Development mode, watch/rebuild on save
-- `npm run test`: Run accessibility tests
+
+### To run the tests
+- `npm start`, starts the test server
+- in a different terminal, `npm test`
+
+### To run 1 test file, prepend `-- -t tests/theTestFileName.js`
+```
+npm test -- -t tests/index.js
+```
+
+### To run 1 testcase, prepend the testcase name
+```
+npm test -- -t tests/index.js "Index sidebar hovered link color-contrast"
+```
