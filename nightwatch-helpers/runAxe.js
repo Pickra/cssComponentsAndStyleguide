@@ -1,6 +1,6 @@
 const chalk = require('chalk');
 
-module.exports.command = function runAxe(selector = 'html', options = {}) {
+function runAxe(selector = 'html', options = {}, passedMessage) {
   this.executeAsync(function(selector, options, done) {
     (function(axe) {
       const el = document.querySelector(selector);
@@ -16,8 +16,8 @@ module.exports.command = function runAxe(selector = 'html', options = {}) {
     const { passes = [], violations = [] } = results;
 
     if (!!passes.length) {
-      const passedMessage = `💪 💪 💪  ${passes.length} accessibility tests passed 💪 💪 💪 `;
-      this.assert.ok(chalk.bold.green(passedMessage));
+      const message = `💪 💪 💪  ${passes.length} accessibility tests passed 💪 💪 💪 `;
+      this.assert.ok(chalk.bold.green(passedMessage ? passedMessage : message));
     }
 
     if (!!violations.length) {
@@ -46,3 +46,5 @@ module.exports.command = function runAxe(selector = 'html', options = {}) {
     return this;
   })
 }
+
+module.exports.command = runAxe;

@@ -4,8 +4,9 @@ const seleniumServer = require("selenium-server");
 const config = {
     src_folders: "./tests",
     output_folder: "./reports",
-    custom_commands_path: "./commands",
+    custom_commands_path: "./nightwatch-helpers",
     test_workers: false,
+    "globals_path": "./nightwatch-helpers/global.js",
 
     selenium: {
       start_process: true,
