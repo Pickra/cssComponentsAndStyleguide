@@ -37,7 +37,7 @@ $kss-vertical-rhythm      : $kss-font-size * 1.5;
 
   pre, code, kbd, samp {
     font-family: $kss-font-code;
-    color: mix($kss-colors-foreground, $kss-colors-heading, 50%);
+    color: #015f4d;
     font-size: 1em;
   }
 
@@ -272,8 +272,6 @@ section[id^="kssref"] {
   margin-bottom: 2.5rem;
 }
 
-.kss-source.kss-style code {color: #16A085; }
-
 //////// EXAMPLE STYLES ////////
 
 @import "../src/colors/colors";
@@ -312,20 +310,20 @@ $ancillaries: (
   }
     
   &__circle {
-    width: 18rem;
-    height: 18rem;
+    width: 25rem;
+    height: 25rem;
     margin: 0 auto $baseline-unit;
     color: $background-color;
     text-align: center;
-    border-radius: 9rem;
+    border-radius: 50%;
     
     &--dark-text { color: $text-color; }
-    &-val { font-size: $baseline-unit; }
+    &-val { font-size: $baseline-increment * 6; }
 
     &-name {
       margin: 0;
-      padding: 5.5rem 0 ($baseline-unit / 2);
-      font-size: $baseline-increment * 5;
+      padding: 7.5rem 0 ($baseline-unit / 2);
+      font-size: $baseline-increment * 7;
     }
   }
   
@@ -334,6 +332,9 @@ $ancillaries: (
   }
   
   @each $name, $color in $ancillaries {
-    &--#{$name} { color: $color; }
+    &--#{$name} {
+      background-color: $color;
+      border: 1px solid $primary-color;
+    }
   }
 }
