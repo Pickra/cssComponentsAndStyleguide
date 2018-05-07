@@ -26,8 +26,7 @@ const config = {
 
         desiredCapabilities: { 
           browserName: "chrome",
-          javascriptEnabled: true,
-          chromeOptions: { args: [ "--headless" ]}
+          javascriptEnabled: true
         }
       }
     }
