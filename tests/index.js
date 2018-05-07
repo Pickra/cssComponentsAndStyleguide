@@ -1,3 +1,5 @@
+const firstSidebarLink = ".layout__nav-item:first-of-type .layout__nav-link";
+
 module.exports = {
     beforeEach: browser => {
         browser
@@ -10,11 +12,17 @@ module.exports = {
             .runAxe()
             .end();
     },
-    "Index sidebar hovered link color-contrast": browser => {
-        const firstSidebarLink = ".layout__nav-item:first-of-type .layout__nav-link";
 
+    "Index sidebar hovered link color-contrast": browser => {
         browser
             .testHoverdColorContrast(firstSidebarLink)
+            .end();
+    },
+
+    "Index sidebar focused link color-contrast": browser => {
+        browser
+            .testFocusStyles(firstSidebarLink)
+            // .pause(10000)
             .end();
     }
 };
