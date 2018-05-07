@@ -55,15 +55,15 @@ node_modules/@pickra/css-components/styleguide/html/index.html
 - `npm run dev`: Development mode, watch/rebuild on save
 
 ### To run the tests
-- `npm start`, starts the test server
-- in a different terminal, `npm test`
+- `npm start`, serves the HTML
+- in a different terminal, `npm test` runs the tests
 
 ### To run 1 test file, prepend `-- -t tests/theTestFileName.js`
 ```
 npm test -- -t tests/index.js
 ```
 
-### To run 1 testcase, prepend `--tescase "name of testcase"`
+### To run 1 testcase, prepend `--testcase "name of testcase"`
 ```
-npm test -- -t tests/index.js "Index sidebar hovered link color-contrast"
+npm test -- -t tests/index.js --testcase "Index sidebar hovered link color-contrast"
 ```
