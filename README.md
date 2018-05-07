@@ -63,7 +63,7 @@ node_modules/@pickra/css-components/styleguide/html/index.html
 npm test -- -t tests/index.js
 ```
 
-### To run 1 testcase, prepend the testcase name
+### To run 1 testcase, prepend `--tescase "name of testcase"`
 ```
 npm test -- -t tests/index.js "Index sidebar hovered link color-contrast"
 ```
