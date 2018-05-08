@@ -22,7 +22,6 @@ module.exports = {
     "Index sidebar focused link color-contrast": browser => {
         browser
             .testFocusStyles(firstSidebarLink)
-            // .pause(10000)
             .end();
     }
 };
