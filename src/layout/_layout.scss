@@ -162,10 +162,12 @@
 // This styleguide uses the layout styles and is responsive.
 // Go ahead, resize the window like nobody's watching...
 // 
-// <u>Please note the below examples, except `full` use a <strong>div</strong> tag
-// for the <strong>layout</strong> class because
-// there should only be 1 <strong>body</strong> tag on a page.</u>
-//
+// <h2>
+// Please note: the <strong>.layout</strong> class should be on a <strong>body</strong> tag.
+// The <strong>.layout__main</strong> class should be on a <strong>main</strong> tag.
+// In the below examples <strong>.layout</strong> and <strong>.layout__main</strong>
+// are on <strong>div</strong> tags because there should only be 1 of each on a page.
+//</h2>
 // Styleguide Layout
 
 // Header
