@@ -338,3 +338,13 @@ $ancillaries: (
     }
   }
 }
+
+/////// IGNORE THESE //////
+#kssref-icons {
+  .kss-modifier__default-name {
+    display: none;
+  
+    & + .kss-modifier__example { display: none; }
+  }
+
+}
