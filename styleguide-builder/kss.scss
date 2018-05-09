@@ -275,7 +275,7 @@ section[id^="kssref"] {
 //////// EXAMPLE STYLES ////////
 
 @import "../src/colors/colors";
-@import "../src/typography/typography";
+@import "../src/typography/typography-vars";
 
 $primaries:(
   primary: $primary-color,
@@ -346,5 +346,4 @@ $ancillaries: (
   
     & + .kss-modifier__example { display: none; }
   }
-
 }

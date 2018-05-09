@@ -1,0 +1,17 @@
+@import '../../node_modules/modularscale-sass/stylesheets/modularscale';
+
+$root-pixel: 65%;
+
+$ms-base: 1.35rem;
+$ms-ratio: $major-second;
+
+$baseline-ratio: $fifth;
+$baseline-unit: 2rem;
+$baseline-increment: $baseline-unit / 4;
+
+$font-family: Arial, Helvetica, sans-serif;
+$bold: 600;
+$border: 0.1rem ridge $border-color;
+$border-radius: $baseline-unit;
+
+$body-font-size: ms(0);
