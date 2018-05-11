@@ -23,32 +23,34 @@
 .alert {
     $icon-mt: -0.35rem;
 
-    @mixin modifier($color) {
-        $hover-color: mix($color, $text-color, 75%);
-    
+    @mixin get-color($color) {
         background-color: $color;
         color: darken($color, 48%);
-        border-color: $hover-color;
-    
-        &__close:hover {
-            color: $color;
-            background-color: $hover-color;
-        }
+        border-color: mix($color, $text-color, 75%);
     }
 
+    @mixin get-close-hover($color) {
+        &:hover {
+            cursor: pointer;
+            color: $color;
+            background-color: $text-color;
+        }
+    }
+    
     display: block;
     position: relative;
     margin-bottom: $baseline-unit;
     padding: $baseline-unit ($baseline-unit * 2);
-    font-size: $body-font-size;
+    font-size: 1.8rem;
+    font-weight: $bold;
     color: $text-color;
     background-color: $background-color;
     line-height: $baseline-unit;
     border-radius: $border-radius;
 
-    &--warning  { @include modifier($warning-color); }
-    &--success  { @include modifier($success-color); }
-    &--info     { @include modifier($info-color); }
+    &--warning  { @include get-color($warning-color); }
+    &--success  { @include get-color($success-color); }
+    &--info     { @include get-color($info-color); }
 
     &__close {
         display: block;
@@ -59,10 +61,9 @@
         text-align: center;
         transition: background 0.5s, color 0.5s;
 
-        &:hover {
-            cursor: pointer;
-            background-color: $text-color;
-        }
+        &--warning  { @include get-close-hover($warning-color); }
+        &--success  { @include get-close-hover($success-color); }
+        &--info     { @include get-close-hover($info-color); }
     }
 
     &__icon {
