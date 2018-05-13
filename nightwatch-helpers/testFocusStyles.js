@@ -1,3 +1,6 @@
+const chalk = require('chalk');
+const NoSelectorMessage = "That selector doesn't exist, please try a different selector";
+
 const runOnly = {
     runOnly: {
         type: "rules",
@@ -19,6 +22,11 @@ function testFocusStyles(selector) {
             const elId = res.value.ELEMENT;
 
             this.elementIdCssProperty(elId, "outline", prop => {
+                if (prop.value.message) {
+                    console.log(chalk.underline.bold.red(NoSelectorMessage));
+                    return;
+                }
+
                 const doesntHaveNone = !prop.value.includes("none");
                 const doesntHave0px = !prop.value.includes("0px");
 
@@ -27,9 +35,10 @@ function testFocusStyles(selector) {
                 } else {
                     this.assert.fail('The selector has no outline focused value');
                 }
+
+                this.runAxe(selector, runOnly, passedMessage);
             });
             
-            this.runAxe(selector, runOnly, passedMessage);
         }
     );
 }
