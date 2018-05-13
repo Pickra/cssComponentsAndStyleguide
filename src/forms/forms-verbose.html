@@ -24,23 +24,29 @@
         <div class="grid">
             <div class="grid__row grid__row--padded">
                 <div class="grid__col--md-6 grid__col--xs-12">
-                    <label class="label">Do You Use Your Powers For Good?</label>
-                    <div>
-                        <label class="label label--inline label--light">
-                            <input class="radio" type="radio" name="good-powers" />
+                    <p>Do You Use Your Powers For Good?</p>
+                    <div role="radiogroup">
+                         <label class="label label--inline label--light" id="powers-good">
+                            <input class="radio" type="radio" name="good-powers" aria-labelledby="powers-good" />
                             Always!
                         </label>
-                        <label class="label label--inline label--light">
-                            <input class="radio" type="radio" name="good-powers" />
+                        <label class="label label--inline label--light" id="powers-never">
+                            <input class="radio" type="radio" name="good-powers" aria-labelledby="powers-never" />
                             Never!
                         </label>
                         </label>
-                        <label class="label label--inline label--light">
-                            <input class="radio" type="radio" name="good-powers" />
+                        <label class="label label--inline label--light" id="powers-sometimes">
+                            <input class="radio" type="radio" name="good-powers"  aria-labelledby="powers-sometimes"/>
                             Sometimes...
                         </label>
                     </div>
                 </div>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset class="fieldset">
+        <div class="grid">
+            <div class="grid__row grid__row--padded">
                 <div class="grid__col--md-6 grid__col--xs-12">
                     <label class="label">What Compensation Do You Expect for Using Your Powers?</label>
                     <div>
@@ -80,8 +86,8 @@
                     </div>
                 </div>
                 <div class="grid__col--sm-3 grid__col--xs-12">
-                    <label class="label">Select Costume Color Scheme</label>
-                    <select class="select select--full-width">
+                    <label class="label" for="verbose-select">Select Costume Color Scheme</label>
+                    <select class="select select--full-width" id="verbose-select">
                         <optgroup label="Standard">
                             <option value="rnb">Red and Blue</option>
                             <option value="bng">Black and Grey</option>
@@ -97,7 +103,8 @@
     </fieldset>
     <fieldset class="fieldset">
         <legend class="fieldset__legend">How Did You Get Your Super Powers</legend>
-        <textarea class="textarea textarea--full-width" rows="4">A hero can be anyone. Someone like you. Someone who'll rattle the cages. I seek the means to fight injustice. To turn fear against those who prey on the fearful. My anger outweights my guilt. I will go back to Gotham and I will fight people Iike this but I will not become an executioner.</textarea>
+        <label for="verbose-textarea" class="label">Please be honest</label>
+        <textarea class="textarea textarea--full-width" rows="4" id="verbose-textarea">A hero can be anyone. Someone like you. Someone who'll rattle the cages. I seek the means to fight injustice. To turn fear against those who prey on the fearful. My anger outweights my guilt. I will go back to Gotham and I will fight people Iike this but I will not become an executioner.</textarea>
     </fieldset>
     <button class="button button--primary">Submit</button>
 </form>
