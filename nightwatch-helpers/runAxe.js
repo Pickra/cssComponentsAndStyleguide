@@ -32,11 +32,13 @@ function runAxe(selector = 'html', options = {}, passedMessage) {
             console.log(fail + helpLabel + link);
     
             nodes.forEach(node => {
-                const { target } = node;
-                const elLabel = chalk.keyword('crimson').bold('Element: ');
-                const el = chalk.keyword('fuchsia').bold(target);
+                const { target, html } = node;
+                const cssPath = chalk.keyword('fuchsia').bold(target);
+                const HTML = chalk.keyword('fuchsia').bold(html);
 
-                this.assert.fail( elLabel + el );
+                console.log(`HTML: ${HTML}`)
+                console.log(`CSS PATH: ${cssPath}`)
+                this.assert.fail(`TYPE: ${id} - CSS PATH: ${cssPath}`);
             });
 
             console.log(`💩 🔥 💥 💩 🔥 💥 💩 🔥 💥 💩 🔥 💥\n`);
