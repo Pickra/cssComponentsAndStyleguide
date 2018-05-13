@@ -23,7 +23,6 @@
     "styleguide:open": "open ./styleguide/html/index.html",
     "kss:watch": "onchange \"src/**/*.{scss,html}\" \"styleguide-builder/kss.scss/\" -- npm run kss:build",
     "kss:build": "kss -c ./kss-config.json",
-    "changelog": "auto-changelog -l 100",
     "start": "node server/server.js",
     "test": "nightwatch"
   },
@@ -31,7 +30,6 @@
   "license": "ISC",
   "devDependencies": {
     "ajv": "6.0.0",
-    "auto-changelog": "1.4.6",
     "autoprefixer": "7.2.5",
     "axe-core": "3.0.1",
     "chromedriver": "2.37.0",
