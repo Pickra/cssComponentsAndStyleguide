@@ -56,6 +56,7 @@ node_modules/@pickra/css-components/styleguide/html/index.html
 
 ### To run the tests
 - `npm start`, serves the HTML
+- be sure a build exists, `npm run build`, before running the tests
 - in a different terminal, `npm test` runs the tests
 
 ### To run 1 test file, prepend `-- -t tests/theTestFileName.js`
