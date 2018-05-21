@@ -3,5 +3,5 @@
 module.exports = {
     extends: "stylelint-config-recommended-scss",
     ignoreFiles: "./styleguide-builder/kss.scss",
-    rules: {}
+    rules: { "no-descending-specificity": null }
 }

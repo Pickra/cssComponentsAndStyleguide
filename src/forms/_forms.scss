@@ -87,6 +87,8 @@ $form-element-full-width: 100%;
     }
 }
 
+@import "toggles";
+
 // Forms
 //
 // Forms contain several elements.
@@ -123,6 +125,12 @@ $form-element-full-width: 100%;
 //
 // Styleguide Forms.4radio
 
+// Toggles
+//
+// Markup: forms-toggle.html
+//
+// Styleguide Forms.5toggle
+
 // Selects
 //
 // .select--full-width - Gives the select the width of its container.
@@ -130,7 +138,7 @@ $form-element-full-width: 100%;
 //
 // Markup: forms-select.html
 //
-// Styleguide Forms.5select
+// Styleguide Forms.6select
 
 // Textarea
 //
@@ -138,13 +146,13 @@ $form-element-full-width: 100%;
 //
 // Markup: forms-textarea.html
 //
-// Styleguide Forms.6textarea
+// Styleguide Forms.7textarea
 
 // Fieldsets
 //
 // Markup: forms-fieldset.html
 //
-// Styleguide Forms.7fieldset
+// Styleguide Forms.8fieldset
 
 // Simple
 //
@@ -152,7 +160,7 @@ $form-element-full-width: 100%;
 //
 // Markup: forms-simple.html
 //
-// Styleguide Forms.8simple
+// Styleguide Forms.9simple
 
 // Verbose
 //
@@ -161,5 +169,5 @@ $form-element-full-width: 100%;
 // 
 // Markup: forms-verbose.html
 // 
-// Styleguide Forms.9verbose
+// Styleguide Forms.91verbose
 
