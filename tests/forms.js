@@ -19,11 +19,22 @@ module.exports = {
             .end();
     },
 
-    "Select active accessibility": browser => {
+    "Select active state accessibility": browser => {
         const select = "#a";
 
         browser
+            .click(select)
             .runAxe(select)
+            .end();
+    },
+
+    "Toggle-switch active state accessibility": browser => {
+        const toggleSwitch = "#toggle-sm-switch";
+        const checkbox = "#toggle-sm-input";
+
+        browser
+            .click(checkbox)
+            .runAxe(toggleSwitch)
             .end();
     }
 };
