@@ -1,6 +1,7 @@
+<h2>Super Power Interviewee Form</h2>
 <form class="form">
     <fieldset class="fieldset">
-        <legend class="fieldset__legend">Super Power Interviewee Form</legend>
+        <legend class="fieldset__legend">What is your name?</legend>
         <div class="grid">
             <div class="grid__row grid__row--padded">
                 <div class="grid__col--sm-6 grid__col--xs-12">
@@ -45,47 +46,68 @@
         </div>
     </fieldset>
     <fieldset class="fieldset">
+        <legend class="fieldset__legend">Please turn on your super powers.</legend>
+        <div class="toggle toggle--lg" id="toggle-verbose-switch">
+            <input type="checkbox" id="toggle-verbose" class="toggle__input">
+            <label class="toggle__label" for="toggle-verbose">
+                <span class="toggle__screenreader-message">Toggle this option</span>
+                <span class="toggle__switch" aria-hidden="true">
+                <span class="toggle__switch-option toggle__switch-option--on" aria-hidden="true">
+                    <svg class="icon icon--lg"><use xlink:href="#ei-check"></use></svg>
+                </span>
+                <span class="toggle__switch-option toggle__switch-option--off" aria-hidden="true">
+                    <svg class="icon icon--lg"><use xlink:href="#ei-close-o"></use></svg>
+                </span>
+                </span>
+            </label>
+        </div>
+    </fieldset>
+    <fieldset class="fieldset">
+        <legend class="fieldset__legend">What Compensation Do You Expect for Using Your Powers?</legend>
         <div class="grid">
             <div class="grid__row grid__row--padded">
                 <div class="grid__col--md-6 grid__col--xs-12">
-                    <label class="label">What Compensation Do You Expect for Using Your Powers?</label>
-                    <div>
-                        <div class="grid__row grid__row--padded">
-                            <div class="grid__col grid__col--xs-12">
-                                <label class="label label--inline label--light">
-                                    <input class="checkbox" type="checkbox" />
-                                    Money Money... MONEY!
-                                </label>
-                            </div>
+                    <div class="grid__row grid__row--padded">
+                        <div class="grid__col grid__col--xs-12">
+                            <label class="label label--inline label--light">
+                                <input class="checkbox" type="checkbox" />
+                                Money Money... MONEY!
+                            </label>
                         </div>
-                        <div class="grid__row grid__row--padded">
-                            <div class="grid__col grid__col--xs-12">
-                                <label class="label label--inline label--light">
-                                    <input class="checkbox" type="checkbox" />
-                                    My contribution to society is enough compensation.
-                                </label>
-                            </div>
+                    </div>
+                    <div class="grid__row grid__row--padded">
+                        <div class="grid__col grid__col--xs-12">
+                            <label class="label label--inline label--light">
+                                <input class="checkbox" type="checkbox" />
+                                My contribution to society is enough compensation.
+                            </label>
                         </div>
-                        <div class="grid__row grid__row--padded">
-                            <div class="grid__col grid__col--xs-12">
-                                <label class="label label--inline label--light">
-                                    <input class="checkbox" type="checkbox" />
-                                    Access to secrets and elite members of society wouldn't hurt.
-                                </label>
-                            </div>
+                    </div>
+                    <div class="grid__row grid__row--padded">
+                        <div class="grid__col grid__col--xs-12">
+                            <label class="label label--inline label--light">
+                                <input class="checkbox" type="checkbox" />
+                                Access to secrets and elite members of society wouldn't hurt.
+                            </label>
                         </div>
-                        </div>
-                        <div class="grid__row grid__row--padded">
-                            <div class="grid__col grid__col--xs-12">
-                                <label class="label label--inline label--light">
-                                    <input class="checkbox" type="checkbox" />
-                                    I WANA BE FAMOUS!
-                                </label>
-                            </div>
+                    </div>
+                    <div class="grid__row grid__row--padded">
+                        <div class="grid__col grid__col--xs-12">
+                            <label class="label label--inline label--light">
+                                <input class="checkbox" type="checkbox" />
+                                I WANA BE FAMOUS!
+                            </label>
                         </div>
                     </div>
                 </div>
-                <div class="grid__col--sm-3 grid__col--xs-12">
+            </div>
+        </div>
+    </fieldset>
+    <fieldset class="fieldset">
+        <legend class="fieldset__legend">What is your preffered costume colors?</legend>
+        <div class="grid">
+            <div class="grid__row grid__row--padded">
+                <div class="grid__col--xs-12">
                     <label class="label" for="verbose-select">Select Costume Color Scheme</label>
                     <select class="select select--full-width" id="verbose-select">
                         <optgroup label="Standard">
