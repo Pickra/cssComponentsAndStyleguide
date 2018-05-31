@@ -105,12 +105,5 @@
     }
   }
 
-  // .visuallyhidden - https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/css.md
-  &__screenreader-message {
-    position: absolute; 
-    height: 1px;
-    margin: -1px;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+  &__screenreader-message { @include visually-hidden; }
 }
