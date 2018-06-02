@@ -11,7 +11,7 @@ module.exports = {
             .injectAxe()
             .moveToElement(defaultSibling, 10, 10)
             .waitForElementVisible(toolTip)
-            .runAxe(toolTip)
+            .runAxe(container)
             .end();
     }
 };
