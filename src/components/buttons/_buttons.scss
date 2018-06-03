@@ -5,6 +5,7 @@
 // .button--primary  - Primary element.
 // .button--warning  - Warning element.
 // .button--go       - Go forth and prosper element.
+// .button--light    - Use with dark backgrounds.
 // .button--lg       - Large element.
 //
 // Markup: buttons.html
@@ -29,6 +30,7 @@
     line-height: $baseline-unit;
     vertical-align: middle;
     text-decoration: none;
+    cursor: pointer;
     transition: 0.25s linear background-color;
 
     @include hover($muted-color);
@@ -43,7 +45,11 @@
         font-size: map-get($headers, h5);
     }
 
-    $color-modifiers: (primary: $primary-color, warning: $warning-color, go: $success-color);
+    $color-modifiers: (
+        primary: $primary-color,
+        warning: $warning-color,
+        go: $success-color
+    );
 
     @each $name, $color in $color-modifiers {
         &--#{$name} {
@@ -53,6 +59,21 @@
     
             @include hover($color);
             &:disabled { background-color: $color; }
+        }
+    }
+
+    &--light {
+        &,
+        &:disabled,
+        &:disabled:hover {
+            background-color: $background-color;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+        }
+
+        &:hover {
+            color: $text-color;
+            background-color: $muted-color;
         }
     }
 }

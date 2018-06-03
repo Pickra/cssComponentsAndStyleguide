@@ -5,7 +5,7 @@ module.exports = {
             .injectAxe();
     },
 
-    "Primary button hovered button color-contrast": browser => {
+    "Primary button hovered color-contrast": browser => {
         const primaryBtn = "button.button--primary:first-of-type";
 
         browser
@@ -13,7 +13,7 @@ module.exports = {
             .end();
     },
 
-    "Warning button hovered button color-contrast": browser => {
+    "Warning button hovered color-contrast": browser => {
         const warningBtn = "button.button--warning:first-of-type";
 
         browser
@@ -21,11 +21,19 @@ module.exports = {
             .end();
     },
 
-    "Go button hovered button color-contrast": browser => {
+    "Go button hovered color-contrast": browser => {
         const goBtn = "button.button--go:first-of-type";
 
         browser
             .testHoverdColorContrast(goBtn)
+            .end();
+    },
+
+    "Light button hovered color-contrast": browser => {
+        const lightBtn = "button.button--light:first-of-type";
+
+        browser
+            .testHoverdColorContrast(lightBtn)
             .end();
     }
 };
