@@ -98,7 +98,12 @@ $form-element-full-width: 100%;
 // Labels
 //
 // Use the <strong>label</strong> class to identify a form element.
-// Use the grid to aid in positioning the label in the layout.
+// Use the [grid](section-grid.html) to aid in positioning the label in the layout.
+// 
+// Labels require specific markup and element arrtibutes
+// to make them accessible. For more detail check the markup,
+// [aria-labelledby](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute)
+// and [aria-describedby](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute)
 //
 // .label--inline - Keeps radio buttons and/or checkboxes, wrapped in a label, on the same line.
 // .label--light - Lightens the label text.

@@ -2,6 +2,11 @@
 //
 // Use a tooltip to add information as needed.
 //
+// Tooltips require specific markup and element arrtibutes
+// to make them accessible. For more detail check the markup,
+// [aria-labelledby](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute)
+// and [aria-describedby](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute)
+//
 // Hover on the icon and the underlined word in the paragraph
 // of each example to see the tooltip appear.
 //
