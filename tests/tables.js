@@ -15,7 +15,7 @@ module.exports = {
 
     "Tables hovered row color-contrast": browser => {
         browser
-            .testHoverdColorContrast(firstHoverableRow)
+            .testHoveredColorContrast(firstHoverableRow)
             .end();
     }
 };

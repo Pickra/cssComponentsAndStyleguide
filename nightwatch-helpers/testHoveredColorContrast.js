@@ -5,7 +5,7 @@ const runOnly = {
     }
 };
 
-function testHoverdColorContrast(selector) {
+function testHoveredColorContrast(selector) {
     const passedMessage = `Color contrast passed for the hovered selector: ${selector}`;
 
     this
@@ -14,4 +14,4 @@ function testHoverdColorContrast(selector) {
         .runAxe(selector, runOnly, passedMessage);
 }
 
-module.exports.command = testHoverdColorContrast;
+module.exports.command = testHoveredColorContrast;

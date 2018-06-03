@@ -9,7 +9,7 @@ module.exports = {
         const successAlert = ".alert__close--success";
 
         browser
-            .testHoverdColorContrast(successAlert)
+            .testHoveredColorContrast(successAlert)
             .end();
     },
     
@@ -17,7 +17,7 @@ module.exports = {
         const warningAlert = ".alert__close--warning";
         
         browser
-            .testHoverdColorContrast(warningAlert)
+            .testHoveredColorContrast(warningAlert)
             .end();
     },
 
@@ -25,7 +25,7 @@ module.exports = {
         const infoAlert = ".alert__close--info";
 
         browser
-            .testHoverdColorContrast(infoAlert)
+            .testHoveredColorContrast(infoAlert)
             .end();
     }
 };

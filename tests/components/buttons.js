@@ -9,7 +9,7 @@ module.exports = {
         const primaryBtn = "button.button--primary:first-of-type";
 
         browser
-            .testHoverdColorContrast(primaryBtn)
+            .testHoveredColorContrast(primaryBtn)
             .end();
     },
 
@@ -17,7 +17,7 @@ module.exports = {
         const warningBtn = "button.button--warning:first-of-type";
 
         browser
-            .testHoverdColorContrast(warningBtn)
+            .testHoveredColorContrast(warningBtn)
             .end();
     },
 
@@ -25,7 +25,7 @@ module.exports = {
         const goBtn = "button.button--go:first-of-type";
 
         browser
-            .testHoverdColorContrast(goBtn)
+            .testHoveredColorContrast(goBtn)
             .end();
     },
 
@@ -33,7 +33,7 @@ module.exports = {
         const lightBtn = "button.button--light:first-of-type";
 
         browser
-            .testHoverdColorContrast(lightBtn)
+            .testHoveredColorContrast(lightBtn)
             .end();
     }
 };

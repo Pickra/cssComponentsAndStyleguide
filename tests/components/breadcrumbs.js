@@ -5,7 +5,7 @@ module.exports = {
         browser
             .url(`${browser.launchUrl}section-components.html`)
             .injectAxe()
-            .testHoverdColorContrast(breadcrumbs)
+            .testHoveredColorContrast(breadcrumbs)
             .end();
     },
 };

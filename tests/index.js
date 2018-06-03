@@ -15,7 +15,7 @@ module.exports = {
 
     "Index sidebar hovered link color-contrast": browser => {
         browser
-            .testHoverdColorContrast(firstSidebarLink)
+            .testHoveredColorContrast(firstSidebarLink)
             .end();
     },
 
