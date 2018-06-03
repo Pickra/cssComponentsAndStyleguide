@@ -67,8 +67,8 @@
         &:disabled,
         &:disabled:hover {
             background-color: $background-color;
-            color: $primary-color;
-            border: 1px solid $primary-color;
+            color: $secondary-color;
+            border: 1px solid $secondary-color;
         }
 
         &:hover {
