@@ -1,5 +1,3 @@
-
-
 module.exports = {
     "Tooltip active accessibility": browser => {
         const container = "#kssref-components-tooltips .kss-modifier__default-name + .kss-modifier__example";
