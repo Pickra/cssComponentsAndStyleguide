@@ -50,12 +50,6 @@
         @include hover($muted-color);
     }
 
-    $color-modifiers: (
-        primary: $primary-color,
-        warning: $warning-color,
-        go: $success-color
-    );
-
     @each $name, $color in $color-modifiers {
         &--#{$name} {
             background-color: $color;

@@ -15,6 +15,12 @@ $background-color: #f5f5f5;
 
 $link-color: #0047c8;
 
+$color-modifiers: (
+    primary: $primary-color,
+    warning: $warning-color,
+    go: $success-color
+);
+
 // Colors
 //
 // Styleguide Colors
