@@ -6,7 +6,7 @@ const config = {
     output_folder: "./reports",
     custom_commands_path: "./nightwatch-helpers",
     test_workers: false,
-    "globals_path": "./nightwatch-helpers/global.js",
+    globals_path: "./nightwatch-helpers/global.js",
 
     selenium: {
       start_process: true,
