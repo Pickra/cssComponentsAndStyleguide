@@ -1,9 +1,0 @@
-node_modules/
-dist/
-reports/
-
-styleguide/html/
-styleguide/kss-styles.*
-
-npm-debug.log
-selenium-debug.log

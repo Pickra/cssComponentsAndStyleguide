@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CSS Components and Styleguide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="./css-components.css">
+<link rel="stylesheet" href="./kss-styles.css">
+
+</head>
+  <body class="layout kss-style">
+<!-- HEADER -->
+    <header class="layout__header">
+      <section>CSS Components and Styleguide</section>
+    </header>
+
+<!-- NAV -->
+    <nav class="layout__nav">
+      <ul class="layout__nav-menu">
+        <li class="layout__nav-item">
+          <a class="layout__nav-link" href="./index.html">
+            <span class="kss-nav__name">
+              <span class="kss-nav__ref">0</span>
+              Overview
+            </span>
+          </a>
+        </li>
+        <li class="layout__nav-item">
+          <a
+            class="layout__nav-link "
+            href="section-animations.html"
+          >
+            <span class="kss-nav__name">
+              <span class="kss-nav__ref">1</span>
+              Animations
+            </span>
+          </a>
+        </li>
+        <li class="layout__nav-item">
+          <a
+            class="layout__nav-link "
+            href="section-colors.html"
+          >
+            <span class="kss-nav__name">
+              <span class="kss-nav__ref">2</span>
+              Colors
+            </span>
+          </a>
+        </li>
+        <li class="layout__nav-item">
+          <a
+            class="layout__nav-link "
+            href="section-components.html"
+          >
+            <span class="kss-nav__name">
+              <span class="kss-nav__ref">3</span>
+              Components
+            </span>
+          </a>
+        </li>
+        <li class="layout__nav-item">
+          <a
+            class="layout__nav-link "
+            href="section-forms.html"
+          >
+            <span class="kss-nav__name">
+              <span class="kss-nav__ref">4</span>
+              Forms
+            </span>
+          </a>
+        </li>
+        <li class="layout__nav-item">
+          <a
+            class="layout__nav-link "
+            href="section-grid.html"
+          >
+            <span class="kss-nav__name">
+              <span class="kss-nav__ref">5</span>
+              Grid
+            </span>
+          </a>
+        </li>
+        <li class="layout__nav-item">
+          <a
+            class="layout__nav-link  layout__nav-link--active"
+            href="section-icons.html"
+          >
+            <span class="kss-nav__name">
+              <span class="kss-nav__ref">6</span>
+              Icons
+            </span>
+          </a>
+              <ul class="layout__nav-menu layout__nav-child-menu">
+                <li class="layout__nav-item">
+                  <a
+                    class="layout__nav-link"
+                    href="section-icons.html#kssref-icons-colors"
+                  ><span class="kss-nav__name">Icon Options</span></a>
+                </li>
+                <li class="layout__nav-item">
+                  <a
+                    class="layout__nav-link"
+                    href="section-icons.html#kssref-icons-spinners"
+                  ><span class="kss-nav__name">Spinners</span></a>
+                </li>
+              </ul>
+        </li>
+        <li class="layout__nav-item">
+          <a
+            class="layout__nav-link "
+            href="section-layout.html"
+          >
+            <span class="kss-nav__name">
+              <span class="kss-nav__ref">7</span>
+              Layout
+            </span>
+          </a>
+        </li>
+        <li class="layout__nav-item">
+          <a
+            class="layout__nav-link "
+            href="section-tables.html"
+          >
+            <span class="kss-nav__name">
+              <span class="kss-nav__ref">8</span>
+              Tables
+            </span>
+          </a>
+        </li>
+        <li class="layout__nav-item">
+          <a
+            class="layout__nav-link "
+            href="section-typography.html"
+          >
+            <span class="kss-nav__name">
+              <span class="kss-nav__ref">9</span>
+              Typography
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+<!-- MAIN -->
+    <main class="layout__main">
+          <section
+              id="kssref-icons"
+              class="kss-section--depth-1"
+          >
+            <div>
+              <h1 class="kss-title kss-title--level-1">
+                <a class="kss-title__permalink" href="#kssref-icons">
+                  Icons
+                </a>
+              </h1>
+              <div><p>The styleguide comes with <a href="http://evil-icons.io/">evil-icons</a> svgs. Add an icon with the code below.</p>
+<p><code>&lt;svg class=&quot;icon&quot;&gt;&lt;use xlink:href=&quot;#nameOfIconGoesHere&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></p>
+<p>Add a size class for larger sizes; <strong>md</strong>, <strong>lg</strong>, <strong>xl</strong>, <strong>xxl</strong>.</p>
+<p><code>&lt;svg class=&quot;icon icon--sizeGoesHere&quot;&gt;&lt;use xlink:href=&quot;#nameOfIconGoesHere&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></p>
+<p>All of the icons are listed below in all 5 sizes; the default size is the smallest.</p>
+</div>
+            </div>
+
+              <div class="kss-modifier__wrapper">
+                <div class="kss-modifier__heading">
+                  Examples
+                </div>
+
+                  <div class="kss-modifier__default-name">
+                    Default styling
+                  </div>
+
+                <div class="kss-modifier__example">
+                  <a id="a" href="#a"></a>
+<div>
+    <svg class="icon"><use xlink:href="#"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#"></use></svg>
+</div>
+                  <div class="kss-modifier__example-footer"></div>
+                </div>
+
+                  <div class="kss-modifier__name">
+                    .ei-archive
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-archive
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-archivea" href="#ei-archivea">ei-archive</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-archive"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-archive"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-archive"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-archive"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-archive"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-arrow-down
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-arrow-down
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-arrow-downa" href="#ei-arrow-downa">ei-arrow-down</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-arrow-down"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-arrow-down"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-arrow-down"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-arrow-down"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-arrow-down"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-arrow-left
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-arrow-left
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-arrow-lefta" href="#ei-arrow-lefta">ei-arrow-left</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-arrow-left"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-arrow-left"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-arrow-left"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-arrow-left"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-arrow-left"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-arrow-right
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-arrow-right
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-arrow-righta" href="#ei-arrow-righta">ei-arrow-right</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-arrow-right"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-arrow-right"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-arrow-right"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-arrow-right"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-arrow-right"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-arrow-up
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-arrow-up
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-arrow-upa" href="#ei-arrow-upa">ei-arrow-up</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-arrow-up"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-arrow-up"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-arrow-up"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-arrow-up"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-arrow-up"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-bell
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-bell
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-bella" href="#ei-bella">ei-bell</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-bell"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-bell"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-bell"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-bell"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-bell"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-calendar
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-calendar
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-calendara" href="#ei-calendara">ei-calendar</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-calendar"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-calendar"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-calendar"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-calendar"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-calendar"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-camera
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-camera
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-cameraa" href="#ei-cameraa">ei-camera</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-camera"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-camera"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-camera"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-camera"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-camera"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-cart
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-cart
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-carta" href="#ei-carta">ei-cart</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-cart"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-cart"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-cart"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-cart"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-cart"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-chart
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-chart
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-charta" href="#ei-charta">ei-chart</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-chart"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-chart"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-chart"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-chart"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-chart"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-check
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-check
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-checka" href="#ei-checka">ei-check</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-check"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-check"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-check"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-check"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-check"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-chevron-down
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-chevron-down
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-chevron-downa" href="#ei-chevron-downa">ei-chevron-down</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-chevron-down"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-chevron-down"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-chevron-down"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-chevron-down"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-chevron-down"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-chevron-left
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-chevron-left
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-chevron-lefta" href="#ei-chevron-lefta">ei-chevron-left</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-chevron-left"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-chevron-left"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-chevron-left"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-chevron-left"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-chevron-left"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-chevron-right
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-chevron-right
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-chevron-righta" href="#ei-chevron-righta">ei-chevron-right</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-chevron-right"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-chevron-right"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-chevron-right"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-chevron-right"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-chevron-right"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-chevron-up
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-chevron-up
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-chevron-upa" href="#ei-chevron-upa">ei-chevron-up</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-chevron-up"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-chevron-up"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-chevron-up"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-chevron-up"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-chevron-up"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-clock
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-clock
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-clocka" href="#ei-clocka">ei-clock</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-clock"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-clock"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-clock"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-clock"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-clock"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-close-o
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-close-o
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-close-oa" href="#ei-close-oa">ei-close-o</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-close-o"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-close-o"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-close-o"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-close-o"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-close-o"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-close
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-close
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-closea" href="#ei-closea">ei-close</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-close"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-close"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-close"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-close"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-close"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-comment
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-comment
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-commenta" href="#ei-commenta">ei-comment</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-comment"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-comment"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-comment"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-comment"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-comment"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-credit-card
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-credit-card
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-credit-carda" href="#ei-credit-carda">ei-credit-card</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-credit-card"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-credit-card"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-credit-card"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-credit-card"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-credit-card"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-envelope
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-envelope
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-envelopea" href="#ei-envelopea">ei-envelope</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-envelope"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-envelope"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-envelope"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-envelope"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-envelope"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-exclamation
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-exclamation
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-exclamationa" href="#ei-exclamationa">ei-exclamation</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-exclamation"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-exclamation"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-exclamation"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-exclamation"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-exclamation"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-external-link
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-external-link
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-external-linka" href="#ei-external-linka">ei-external-link</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-external-link"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-external-link"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-external-link"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-external-link"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-external-link"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-eye
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-eye
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-eyea" href="#ei-eyea">ei-eye</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-eye"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-eye"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-eye"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-eye"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-eye"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-gear
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-gear
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-geara" href="#ei-geara">ei-gear</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-gear"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-gear"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-gear"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-gear"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-gear"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-heart
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-heart
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-hearta" href="#ei-hearta">ei-heart</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-heart"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-heart"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-heart"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-heart"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-heart"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-image
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-image
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-imagea" href="#ei-imagea">ei-image</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-image"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-image"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-image"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-image"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-image"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-like
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-like
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-likea" href="#ei-likea">ei-like</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-like"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-like"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-like"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-like"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-like"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-link
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-link
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-linka" href="#ei-linka">ei-link</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-link"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-link"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-link"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-link"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-link"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-location
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-location
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-locationa" href="#ei-locationa">ei-location</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-location"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-location"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-location"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-location"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-location"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-lock
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-lock
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-locka" href="#ei-locka">ei-lock</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-lock"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-lock"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-lock"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-lock"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-lock"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-minus
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-minus
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-minusa" href="#ei-minusa">ei-minus</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-minus"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-minus"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-minus"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-minus"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-minus"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-navicon
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-navicon
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-navicona" href="#ei-navicona">ei-navicon</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-navicon"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-navicon"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-navicon"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-navicon"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-navicon"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-paperclip
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-paperclip
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-paperclipa" href="#ei-paperclipa">ei-paperclip</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-paperclip"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-paperclip"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-paperclip"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-paperclip"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-paperclip"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-pencil
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-pencil
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-pencila" href="#ei-pencila">ei-pencil</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-pencil"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-pencil"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-pencil"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-pencil"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-pencil"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-play
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-play
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-playa" href="#ei-playa">ei-play</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-play"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-play"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-play"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-play"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-play"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-plus
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-plus
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-plusa" href="#ei-plusa">ei-plus</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-plus"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-plus"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-plus"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-plus"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-plus"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-pointer
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-pointer
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-pointera" href="#ei-pointera">ei-pointer</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-pointer"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-pointer"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-pointer"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-pointer"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-pointer"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-question
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-question
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-questiona" href="#ei-questiona">ei-question</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-question"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-question"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-question"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-question"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-question"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-redo
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-redo
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-redoa" href="#ei-redoa">ei-redo</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-redo"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-redo"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-redo"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-redo"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-redo"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-refresh
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-refresh
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-refresha" href="#ei-refresha">ei-refresh</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-refresh"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-refresh"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-refresh"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-refresh"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-refresh"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-retweet
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-retweet
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-retweeta" href="#ei-retweeta">ei-retweet</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-retweet"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-retweet"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-retweet"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-retweet"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-retweet"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-sc-facebook
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-sc-facebook
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-sc-facebooka" href="#ei-sc-facebooka">ei-sc-facebook</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-sc-facebook"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-sc-facebook"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-sc-facebook"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-sc-facebook"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-sc-facebook"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-sc-github
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-sc-github
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-sc-githuba" href="#ei-sc-githuba">ei-sc-github</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-sc-github"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-sc-github"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-sc-github"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-sc-github"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-sc-github"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-sc-google-plus
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-sc-google-plus
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-sc-google-plusa" href="#ei-sc-google-plusa">ei-sc-google-plus</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-sc-google-plus"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-sc-google-plus"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-sc-google-plus"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-sc-google-plus"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-sc-google-plus"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-sc-instagram
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-sc-instagram
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-sc-instagrama" href="#ei-sc-instagrama">ei-sc-instagram</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-sc-instagram"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-sc-instagram"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-sc-instagram"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-sc-instagram"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-sc-instagram"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-sc-linkedin
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-sc-linkedin
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-sc-linkedina" href="#ei-sc-linkedina">ei-sc-linkedin</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-sc-linkedin"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-sc-linkedin"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-sc-linkedin"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-sc-linkedin"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-sc-linkedin"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-sc-odnoklassniki
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-sc-odnoklassniki
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-sc-odnoklassnikia" href="#ei-sc-odnoklassnikia">ei-sc-odnoklassniki</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-sc-odnoklassniki"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-sc-odnoklassniki"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-sc-odnoklassniki"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-sc-odnoklassniki"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-sc-odnoklassniki"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-sc-pinterest
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-sc-pinterest
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-sc-pinteresta" href="#ei-sc-pinteresta">ei-sc-pinterest</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-sc-pinterest"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-sc-pinterest"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-sc-pinterest"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-sc-pinterest"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-sc-pinterest"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-sc-skype
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-sc-skype
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-sc-skypea" href="#ei-sc-skypea">ei-sc-skype</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-sc-skype"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-sc-skype"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-sc-skype"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-sc-skype"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-sc-skype"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-sc-soundcloud
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-sc-soundcloud
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-sc-soundclouda" href="#ei-sc-soundclouda">ei-sc-soundcloud</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-sc-soundcloud"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-sc-soundcloud"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-sc-soundcloud"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-sc-soundcloud"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-sc-soundcloud"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-sc-telegram
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-sc-telegram
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-sc-telegrama" href="#ei-sc-telegrama">ei-sc-telegram</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-sc-telegram"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-sc-telegram"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-sc-telegram"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-sc-telegram"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-sc-telegram"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-sc-tumblr
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-sc-tumblr
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-sc-tumblra" href="#ei-sc-tumblra">ei-sc-tumblr</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-sc-tumblr"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-sc-tumblr"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-sc-tumblr"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-sc-tumblr"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-sc-tumblr"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-sc-twitter
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-sc-twitter
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-sc-twittera" href="#ei-sc-twittera">ei-sc-twitter</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-sc-twitter"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-sc-twitter"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-sc-twitter"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-sc-twitter"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-sc-twitter"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-sc-vimeo
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-sc-vimeo
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-sc-vimeoa" href="#ei-sc-vimeoa">ei-sc-vimeo</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-sc-vimeo"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-sc-vimeo"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-sc-vimeo"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-sc-vimeo"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-sc-vimeo"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-sc-vk
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-sc-vk
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-sc-vka" href="#ei-sc-vka">ei-sc-vk</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-sc-vk"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-sc-vk"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-sc-vk"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-sc-vk"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-sc-vk"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-sc-youtube
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-sc-youtube
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-sc-youtubea" href="#ei-sc-youtubea">ei-sc-youtube</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-sc-youtube"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-sc-youtube"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-sc-youtube"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-sc-youtube"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-sc-youtube"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-search
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-search
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-searcha" href="#ei-searcha">ei-search</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-search"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-search"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-search"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-search"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-search"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-share-apple
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-share-apple
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-share-applea" href="#ei-share-applea">ei-share-apple</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-share-apple"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-share-apple"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-share-apple"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-share-apple"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-share-apple"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-share-google
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-share-google
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-share-googlea" href="#ei-share-googlea">ei-share-google</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-share-google"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-share-google"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-share-google"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-share-google"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-share-google"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-star
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-star
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-stara" href="#ei-stara">ei-star</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-star"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-star"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-star"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-star"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-star"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-tag
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-tag
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-taga" href="#ei-taga">ei-tag</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-tag"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-tag"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-tag"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-tag"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-tag"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-trash
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-trash
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-trasha" href="#ei-trasha">ei-trash</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-trash"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-trash"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-trash"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-trash"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-trash"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-trophy
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-trophy
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-trophya" href="#ei-trophya">ei-trophy</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-trophy"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-trophy"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-trophy"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-trophy"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-trophy"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-undo
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-undo
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-undoa" href="#ei-undoa">ei-undo</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-undo"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-undo"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-undo"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-undo"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-undo"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-unlock
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-unlock
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-unlocka" href="#ei-unlocka">ei-unlock</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-unlock"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-unlock"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-unlock"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-unlock"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-unlock"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+                  <div class="kss-modifier__name">
+                    .ei-user
+                  </div>
+                  <div class="kss-modifier__description">
+                    ei-user
+                  </div>
+                  <div class="kss-modifier__example">
+                    <a id="ei-usera" href="#ei-usera">ei-user</a>
+<div>
+    <svg class="icon"><use xlink:href="#ei-user"></use></svg>
+    <svg class="icon icon--md"><use xlink:href="#ei-user"></use></svg>
+    <svg class="icon icon--lg"><use xlink:href="#ei-user"></use></svg>
+    <svg class="icon icon--xl"><use xlink:href="#ei-user"></use></svg>
+    <svg class="icon icon--xxl"><use xlink:href="#ei-user"></use></svg>
+</div>
+                    <div class="kss-modifier__example-footer"></div>
+                  </div>
+              </div>
+
+                <details class="kss-markup">
+                  <summary>
+                      Markup
+                  </summary>
+                  <pre class="prettyprint linenums lang-html">
+                    <code data-language="html">&lt;a id&#x3D;&quot;[modifier class]a&quot; href&#x3D;&quot;#[modifier class]a&quot;&gt;[modifier class]&lt;/a&gt;
+&lt;div&gt;
+    &lt;svg class&#x3D;&quot;icon&quot;&gt;&lt;use xlink:href&#x3D;&quot;#[modifier class]&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;svg class&#x3D;&quot;icon icon--md&quot;&gt;&lt;use xlink:href&#x3D;&quot;#[modifier class]&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;svg class&#x3D;&quot;icon icon--lg&quot;&gt;&lt;use xlink:href&#x3D;&quot;#[modifier class]&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;svg class&#x3D;&quot;icon icon--xl&quot;&gt;&lt;use xlink:href&#x3D;&quot;#[modifier class]&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;svg class&#x3D;&quot;icon icon--xxl&quot;&gt;&lt;use xlink:href&#x3D;&quot;#[modifier class]&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;</code>
+                  </pre>
+                </details>
+
+              <div class="kss-source kss-style">
+                Source: <code>icons/_icons-all.scss</code>, line 2
+              </div>
+          </section>
+    </main>
+
+<!-- FOOTER -->
+    <footer class="layout__footer">
+      <div class="layout__footer-left-item">Important footer stuff</div>
+      <div class="layout__footer-right-item">Not as important footer stuff</div>
+    </footer>
+
+<!-- SCRIPTS -->
+    <script src="./prettify.js"></script>
+    <script>
+      prettyPrint();
+    </script>
+    <script src="./css-components.js"></script>
+
+    <script>
+      document.addEventListener("submit", function(e) {
+        e.preventDefault();
+      });
+    </script>
+  </body>
+</html>
