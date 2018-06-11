@@ -74,7 +74,7 @@ $form-element-full-width: 100%;
 
     &--inline {
         display: inline-block;
-        margin: 0 $baseline-unit 0 $baseline-unit * 0.333;
+        margin: 0 $baseline-unit 0 ($baseline-unit * 0.333);
     }
 }
 

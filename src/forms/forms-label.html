@@ -8,30 +8,30 @@
         ">
             <p id="labels-{{modifier_class}}-group">Do You Use Your Powers For Good?</p>
             <div role="radiogroup" aria-labelledby="labels-{{modifier_class}}-group">
-                <label class="label {{modifier_class}}" id="labels-{{modifier_class}}-powers-good">
+                <label class="label {{modifier_class}}" for="label-always-{{modifier_class}}">
                     <input
                         class="radio"
+                        id="label-always-{{modifier_class}}"
                         type="radio"
                         name="good-powers"
-                        aria-labelledby="labels-{{modifier_class}}-powers-good"
                     />
                     Always!
                 </label>
-                <label class="label {{modifier_class}}" id="labels-{{modifier_class}}-powers-never">
+                <label class="label {{modifier_class}}" for="label-never-{{modifier_class}}">
                     <input
                         class="radio"
+                        id="label-never-{{modifier_class}}"
                         type="radio"
                         name="good-powers"
-                        aria-labelledby="labels-{{modifier_class}}-powers-never"
-                        />
-                        Never!
-                    </label>
-                    <label class="label {{modifier_class}}" id="labels-{{modifier_class}}-powers-sometimes">
-                        <input
+                    />
+                    Never!
+                </label>
+                <label class="label {{modifier_class}}" for="label-sometimes-{{modifier_class}}">
+                    <input
                         class="radio"
+                        id="label-sometimes-{{modifier_class}}"
                         type="radio"
                         name="good-powers"
-                        aria-labelledby="labels-{{modifier_class}}-powers-sometimes"
                     />
                     Sometimes...
                 </label>

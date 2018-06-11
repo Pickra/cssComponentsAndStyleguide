@@ -6,34 +6,19 @@
             grid__col--sm-12
             grid__col--xs-12
         ">
-        <p id="radios-{{modifier_class}}-group">Do You Use Your Powers For Good?</p>
-        <div role="radiogroup" aria-labelledby="radios-{{modifier_class}}-group">
-                <label class="label label--inline label--light" id="radios-{{modifier_class}}-powers-good">
-                    <input
-                        class="radio"
-                        type="radio"
-                        name="good-powers"
-                        aria-labelledby="radios-{{modifier_class}}-powers-good"
-                        />
+            <p id="radios-{{modifier_class}}-group">Do You Use Your Powers For Good?</p>
+            <div role="radiogroup" aria-labelledby="radios-{{modifier_class}}-group">
+                <label class="label label--inline label--light" for="radio-always">
+                    <input class="radio" id="radio-always" type="radio" name="good-powers" />
                         Always!
                     </label>
-                    <label class="label label--inline label--light" id="radios-{{modifier_class}}-powers-never">
-                        <input
-                        class="radio"
-                        type="radio"
-                        name="good-powers"
-                        aria-labelledby="radios-{{modifier_class}}-powers-never"
-                        />
+                    <label class="label label--inline label--light" for="radio-never">
+                        <input class="radio" id="radio-never" type="radio" name="good-powers" />
                         Never!
                     </label>
-                    <label class="label label--inline label--light" id="radios-{{modifier_class}}-powers-sometimes">
-                        <input
-                        class="radio"
-                        type="radio"
-                        name="good-powers"
-                        aria-labelledby="radios-{{modifier_class}}-powers-sometimes"
-                    />
-                    Sometimes...
+                    <label class="label label--inline label--light" for="radio-sometimes">
+                        <input class="radio" id="radio-sometimes" type="radio" name="good-powers" />
+                        Sometimes...
                 </label>
             </div>
         </div>
