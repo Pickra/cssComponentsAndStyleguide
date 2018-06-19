@@ -68,3 +68,5 @@ npm test -- -t tests/index.js
 ```
 npm test -- -t tests/index.js --testcase "Index sidebar hovered link color-contrast"
 ```
+
+## If you're wondering what's the deal with this repo, checkout the [breakdown](breakdown.md).
