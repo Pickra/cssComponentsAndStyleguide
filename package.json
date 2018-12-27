@@ -48,6 +48,7 @@
     "stylelint-scss": "2.3.0",
     "stylelint-webpack-plugin": "0.10.4",
     "svg-sprite-loader": "3.7.3",
+    "svg4everybody": "2.1.9",
     "svgo-loader": "2.1.0",
     "webpack": "4.26.1",
     "webpack-cli": "2.0.14"
