@@ -3,26 +3,23 @@
 // An alert looks like...
 //
 // ```
-// <container>                      - has an alert and alert--$color class
-//      <icon>                      - has an alert__icon class
-//          <svg>                   - has an icon and icon--md class 
-//              <use xlink:href>    - $icon-reference
-//      <close>                     - has an alert__close alert--$color__close class
-//          <svg>                   - has an icon and icon--md class 
-//              <use xlink:href>    - $icon-reference
-//      <text>
+// <alert>                              - alert and alert--$color class
+//      <svg>                           - icon, icon--md + alert__icon class class 
+//          <use xlink:href>            - icon name
+//      <text>                          - text read by the screen reader
+//      <button>                        - has an alert__close alert--$color__close class
+//          <svg>                       - has an icon and icon--md class 
+//              <use xlink:href>        - close button icon name
 //```
 //
-// But all you need to do is copy the markup below, add some text and pick a color:
-// <strong>warning</strong>, <strong>success</strong>, <strong>info</strong>
+// But all you need to do is copy the accessible markup below, add some text and pick a color:
+// <strong>warning</strong>, <strong>success</strong>, <strong>info</strong>.
 //
 // Markup: alerts.html
 //
 // Styleguide Components.alerts
 
 .alert {
-    $icon-mt: -0.35rem;
-
     @mixin get-color($color) {
         background-color: $color;
         color: darken($color, 48%);
@@ -37,8 +34,9 @@
         }
     }
     
-    display: block;
+    display: flex;
     position: relative;
+    align-items: center;
     margin-bottom: $baseline-unit;
     padding: $baseline-unit ($baseline-unit * 2);
     font-size: 1.8rem;
@@ -53,22 +51,33 @@
     &--info     { @include get-color($info-color); }
 
     &__close {
-        display: block;
         position: absolute;
         right: $baseline-unit;
-        margin-top: $icon-mt;
+        padding: 0;
+        border: 1px solid;
         border-radius: $baseline-unit;
         text-align: center;
         transition: background 0.5s, color 0.5s;
 
-        &--warning  { @include get-close-hover($warning-color); }
-        &--success  { @include get-close-hover($success-color); }
-        &--info     { @include get-close-hover($info-color); }
+        &--warning  {
+            background-color: $warning-color;
+            @include get-close-hover($warning-color);
+        }
+
+        &--success  {
+            background-color: $success-color;
+            @include get-close-hover($success-color);
+        }
+
+        &--info     {
+            background-color: $info-color;
+            @include get-close-hover($info-color);
+        }
+
     }
 
     &__icon {
         position: absolute;
         left: 2 * $baseline-increment;
-        margin-top: $icon-mt;
     }
 }
