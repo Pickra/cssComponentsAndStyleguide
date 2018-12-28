@@ -22,8 +22,6 @@
 .tooltip {
     $space: $baseline-increment * 2;
 
-    @include visually-hidden;
-
     display: block;
     top: -4.5em;
     left: 4em;
