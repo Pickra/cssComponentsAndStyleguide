@@ -1,10 +1,11 @@
 // Drawers
 //
-// Drawers need JavaScript to open and close,
-// this functionality is not included.
+// Drawers need JavaScript to open and close.
+// This functionality is not included in the library
+// but there is a simple example at the bottom of the markup.
 //
 // Use a drawer when a page might need extra information.
-// E.g.: Creating or updating a small set of information,
+// E.g. creating or updating a small set of information,
 // hiding/showing advanced settings, easter eggs, etc...
 //
 // Markup: drawers.html
@@ -51,16 +52,24 @@
     }
 
     &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
         padding: $baseline-unit 0 0;
         margin: 0 $baseline-unit;
     }
 
     &__close {
-        float: right;
-        color: $muted-text-color;
+        padding: 0;
+        border-radius: 50%;
         cursor: pointer;
+        color: $muted-text-color;
+        border-color: $muted-text-color;
 
-        &:hover { color: $text-color; }
+        &:hover {
+            color: $text-color;
+            border-color: $text-color;
+        }
     }
 
     &__body {
