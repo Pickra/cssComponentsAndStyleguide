@@ -3,6 +3,7 @@
         class="tooltip-container"
         aria-labelledby="icon-title-{{ modifier_class }}"
         aria-describedby="icon-content-{{ modifier_class }}"
+        tabindex="0"
     >
         <svg class="icon icon--md tooltip-sibling">
             <use xlink:href="#ei-question"></use>
@@ -25,9 +26,10 @@
         class="tooltip-container"
         aria-labelledby="paragraph-title-{{ modifier_class }}"
         aria-describedby="paragraph-content-{{ modifier_class }}"
+        tabindex="0"
     >
         <span class="tooltip-sibling" style="text-decoration: underline;">Doctor.</span>
-        <div class="tooltip {{ modifier_class }}" role="tooltip">
+        <div class="tooltip visually-hidden {{ modifier_class }}" role="tooltip">
             <span class="tooltip__title" id="paragraph-title-{{ modifier_class }}">
                 It's a fez. I wear a fez now.
             </span>
