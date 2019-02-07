@@ -59,6 +59,10 @@
       #{$p}__switch-option--on { opacity: 1; }
       #{$p}__switch-option--off { opacity: 0; }
     }
+
+    &:focus ~ #{$p}__label #{$p}__switch {
+      box-shadow: 0 0 3px $primary-color;
+    }
   }
 
   &__switch {
